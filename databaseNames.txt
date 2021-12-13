@@ -1,0 +1,3 @@
+userDatabase : used in signup and signin pages
+cricketDatabase: array of objects to store related data to cricket products
+shoppingCart = cart database
