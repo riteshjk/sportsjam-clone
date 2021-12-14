@@ -25,3 +25,10 @@
 .productDiv img{
     width: 90%;    
 }
+#categoryMenu>div{
+    height: 200px;
+    overflow-y: scroll;
+}
+#categoryMeny li{
+    list-style-type: none;
+}

@@ -658,6 +658,7 @@ function displayProducts(arr){
 
 document.querySelector("#sortBy").addEventListener("change",sortBy);
 
+//Sorting Function
 function sortBy(){
     var val = document.querySelector("#sortBy").value;
     if(val == "priceAsc"){
@@ -679,7 +680,33 @@ function sortBy(){
     }
     displayProducts(prodData);
 }
-
+//Trying to create the filter categories on their own without need for hardcoding them into the html page
+function getAllCategories(arr){
+console.log(arr)
+    var uniq = {};
+    for(var i =0; i<arr.length; i++){
+        if(uniq[arr[i].category]===undefined){
+            uniq[arr[i].category] =1;
+        }
+        else{
+            uniq[arr[i].category]++;
+        }        
+    }
+    console.log(uniq)
+    return uniq;
+}
+var uniqCategories = getAllCategories(prodData)
+var fil = document.querySelector("#filter")
+for(var key in uniqCategories){
+    var ckbox = document.createElement("input");
+    ckbox.setAttribute("type","checkbox");
+    ckbox.setAttribute("value", key);
+    ckbox.setAttribute("name",key);
+    var label = document.createElement("label");
+    label.setAttribute("for",key);
+    label.textContent = `${key} (${uniqCategories[key]})`;
+    fil.append(ckbox, label);
+}
 // function flexchange(num){
 //     document.querySelector("#productDiv").style.flex = `${num}%`;
 // }
