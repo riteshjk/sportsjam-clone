@@ -53,6 +53,17 @@ li {
   font-family: raleway, sans-serif;
   font-weight: 300;
 }
+.nav1 li a {
+  line-height: 24px;
+  color: #dedede;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: raleway, sans-serif;
+  font-weight: 300;
+}
+.nav1 li a:hover {
+  color: #f39c39;
+}
 .nav li a:hover {
   color: #f39c39;
 }
@@ -213,4 +224,8 @@ div.left-text a.btn {
   font-size: 18px;
   text-transform: uppercase;
   font-family: open sans;
+}
+.nav1{
+  height:40px;
+  width:100%;
 }

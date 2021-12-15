@@ -18,8 +18,11 @@ var w = document.getElementById('tcAmount');
 
 
 
+
 function addedtocart(arr){
+    var t = document.getElementById('counter');
     var gtotal=0;
+    var count = 0;
     var newData = document.getElementById("why")
     newData.textContent = "";
     
@@ -32,6 +35,7 @@ function addedtocart(arr){
         var pDiv = document.createElement("div")
         var image = document.createElement('img')
         image.src = ele.image;
+        image.setAttribute("class","newImage")
         pDiv.append(image, ele.product_name)
         pDiv.setAttribute("class","flexBox")
 
@@ -54,6 +58,8 @@ function addedtocart(arr){
         pbtn.setAttribute("onclick",`increment(${ele.quantity}, ${ind})`)
         nbtn.setAttribute("onclick",`decrement(${ele.quantity}, ${ind})`)
         qDiv.append(nbtn,ele.quantity,pbtn)
+        count += ele.quantity; 
+        t.innerHTML=count;
         // console.log(ele)
         // Quantity.append(qDiv)
 

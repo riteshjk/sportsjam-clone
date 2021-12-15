@@ -8,7 +8,7 @@ padding: 0px;
 }
 
 .flexItem{
-    width: 99.75%;
+    width: 98.95%;
     margin: auto;
     display: flex;
     border-top: 1px solid;
@@ -62,7 +62,7 @@ padding: 0px;
 .five{
     width:100%;
 }
-img{
+.newImage{
     width: 100px;
     height: 88px;
     border:1px solid;
@@ -114,7 +114,7 @@ img{
 }
 .newData{
     display: flex;
-    width: 99.75%;
+    width: 98.95%;
     margin: auto;
     border-left: 1px solid;
     border-right: 1px solid;
@@ -176,6 +176,8 @@ img{
 }
 #front{
     display: flex;
+    width: 99.3%;
+    margin: auto;
 }
 .box2{
     margin-top: 10px;
@@ -189,7 +191,7 @@ img{
     
 }
 .get{
-    margin-top: 10px;
+    margin: 10px 0 0 0.4%;
 }
 .final2{
     margin-left: 460px;
@@ -202,4 +204,18 @@ img{
     color:white;
     padding: 3px;
     
+}
+.cartdiv{
+    position: relative;
+}
+#counter{
+    position: absolute;
+    top:5px;
+    right: 142px;
+    width: 14px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    padding-left: 5px;
 }
