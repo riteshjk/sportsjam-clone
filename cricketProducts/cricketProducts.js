@@ -8,34 +8,34 @@ var crickproddata = [
         price: 10799,
     },{
         imgUrl:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/YWCEW7000.jpg",
-        category:"English Willow Bats",
+        category:"Category 2",
         name:"YWC Yuvi 7000 English Willow Cricket Bat",
         strikedOffPrice: 14999,
         price:14499,
     },{
         imgUrl:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/YWCEW12000.jpg",
-        category:"English Willow Bats",
+        category:"Category 3",
         name:"YWC Yuvi 12000 English Willow Cricket Bat",
         strikedOffPrice:27999,
         price:25199,
     },
     {
         imgUrl:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/YWCEW3000.jpg",
-        category:"English Willow Bats",
+        category:"Category 2",
         name:"YWC Yuvi 3000 English Willow Cricket Bat",
         strikedOffPrice:8499,
         price:7649,        
     },
     {
         imgUrl:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/YWCEW1000.jpg",
-        category:"English Willow Bats",
+        category:"Category 2",
         name:"YWC Yuvi 1000 English Willow Cricket Bat",
         strikedOffPrice:5999,
         price:5399, 
     },
     {
         imgUrl:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/PMEW05334501.jpg",
-        category:"English Willow Bats",
+        category:"Category 3",
         name:"Puma Evo Speed 4 Cricket Bat",
         strikedOffPrice:8799,
         price:5299, 
@@ -618,12 +618,11 @@ var crickproddata = [
 
 localStorage.setItem("cricketDatabase",JSON.stringify(crickproddata));
 
-var prodData = JSON.parse(localStorage.getItem("cricketDatabase"))||[];
+var prodData = JSON.parse(localStorage.getItem("cricketDatabase"));
 
 displayProducts(prodData);
 
 function displayProducts(arr){
-    console.log("Entering this")
     document.querySelector(".displayProducts").innerHTML = "";
     arr.map(function(elem){
         var div = document.createElement("div");
@@ -682,7 +681,6 @@ function sortBy(){
 }
 //Trying to create the filter categories on their own without need for hardcoding them into the html page
 function getAllCategories(arr){
-console.log(arr)
     var uniq = {};
     for(var i =0; i<arr.length; i++){
         if(uniq[arr[i].category]===undefined){
@@ -695,18 +693,79 @@ console.log(arr)
     console.log(uniq)
     return uniq;
 }
-var uniqCategories = getAllCategories(prodData)
+
+//Filteration Part
+var filterCategories = [];
+var uniqCategoriesobj = getAllCategories(prodData)
+var uniqCategoriesArr = [];
+for(var key in uniqCategoriesobj){
+    uniqCategoriesArr.push(key);
+}
+
 var fil = document.querySelector("#filter")
-for(var key in uniqCategories){
+uniqCategoriesArr.map(function(elem){
     var ckbox = document.createElement("input");
     ckbox.setAttribute("type","checkbox");
-    ckbox.setAttribute("value", key);
-    ckbox.setAttribute("name",key);
+    ckbox.setAttribute("value", elem);
+    ckbox.setAttribute("name","category");
+    var elem_count = 0;
+    ckbox.addEventListener("change",function(event){
+        
+        if(elem_count%2==0){
+            filterCategories.push(elem);
+        }
+        else{
+            for(var i =0; i<filterCategories.length; i++){
+                if(filterCategories[i]==elem){
+                    filterCategories.splice(i,1);
+                    break;
+                }
+            }
+        }
+        elem_count++;
+        
+        console.log(filterCategories);
+        displayFilteredProducts();
+        
+    })
     var label = document.createElement("label");
-    label.setAttribute("for",key);
-    label.textContent = `${key} (${uniqCategories[key]})`;
-    fil.append(ckbox, label);
+    label.setAttribute("for",elem);
+    label.textContent = `${elem} (${uniqCategoriesobj[elem]})`;
+    var br = document.createElement("br")
+    fil.append(ckbox, label, br);
+
+})
+
+function displayFilteredProducts(){
+    var total_filtered_prods = []
+    for(var i =0; i<filterCategories.length;i++){
+       var filtered= prodData.filter(function(elem){
+            return elem.category == filterCategories[i];
+        })
+        total_filtered_prods = total_filtered_prods.concat(filtered)
+        console.log(total_filtered_prods)
+        
+        displayProducts(total_filtered_prods);
+        
+        
+    }
 }
-// function flexchange(num){
-//     document.querySelector("#productDiv").style.flex = `${num}%`;
-// }
+
+
+
+
+//Changing the view of the page from 3 to 4 or vice-versa//
+document.querySelector("#flexofThree").addEventListener("click", function(){
+    console.log("30%");
+    for(var i =0; i<prodData.length; i++){
+        document.querySelectorAll(".productDiv")[i].style.flex = "30%"
+    }
+    
+});
+
+document.querySelector("#flexOfFour").addEventListener("click", function(){
+    for(var i =0; i<prodData.length; i++){
+        document.querySelectorAll(".productDiv")[i].style.flex = "25%"
+    }
+    console.log("25%")
+})
