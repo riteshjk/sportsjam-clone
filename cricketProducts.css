@@ -1,0 +1,79 @@
+.mainPage {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.maincontainer{
+    width: 100%;
+}
+
+.displayProducts{
+    display:flex;
+    flex-wrap: wrap;
+}
+.productDiv {
+    flex: 25%;
+    margin: 2%;
+    
+}
+.productDiv>img:nth-child(2) {
+    width: 100%;    
+}
+.productDiv>div{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.productDiv:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.productDiv>.wlIcon{
+    width: 20px;
+    margin-left: 80%;
+}
+.sortAndStuff {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.productDiv img{
+    width: 90%;    
+}
+#categoryMenu>div{
+    height: 200px;
+    overflow-y: scroll;
+}
+#categoryMeny li{
+    list-style-type: none;
+}
+
+
+/* THe Quick view features CSS */
+.quickview{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 30%;
+    top:20%;
+    width: 50%;
+    height: 400px;
+    margin:auto;
+    background-color: rgb(224, 224, 180);
+    border: 5px solid orange;
+    
+}
+.quickview>table{
+    width: 100%;
+}
+.quickViewImg{
+    width: 200px;
+    display: inline;
+}
+.quickViewImg>img{
+    width: 200px;
+}
+
+.quickviewbtns{
+    display: inline;
+    margin-left: 90%;
+}
