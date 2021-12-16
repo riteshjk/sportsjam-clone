@@ -718,8 +718,9 @@ function displayProducts(arr){
         div.setAttribute("class","productDiv");
         div.addEventListener("click", function(){
             localStorage.setItem("quickViewProduct",JSON.stringify(elem));
-            document.querySelector(".quickview").style.display = "block";
-            showQuickView()
+            window.location.href = "individualProduct.html"
+            // document.querySelector(".quickview").style.display = "block";
+            // showQuickView()
         })
 
         var wishlistIcon = document.createElement("img");
@@ -733,20 +734,56 @@ function displayProducts(arr){
         var strikedOffPrice = document.createElement("p");
         strikedOffPrice.textContent = "₹"+elem.strikedOffPrice;
         strikedOffPrice.style.textDecoration = "line-through";
+        strikedOffPrice.style.color = "grey"
     
         var price = document.createElement("p");
         price.textContent = "₹"+elem.price;
+        
     
         var discPercent = document.createElement('p');
         var discount= Math.floor(((elem.strikedOffPrice-elem.price)/elem.strikedOffPrice)*100);
         discPercent.textContent = discount + "% off"
         discPercent.style.color="orange";
+
+        var star = document.createElement("img");
+        star.setAttribute("src","https://winonan.org/wp-content/uploads/2018/04/5-stars-900x225.jpg");
+        star.style.width = "80px";
         var innerDiv = document.createElement("div");
-        innerDiv.append(strikedOffPrice, price, discPercent)
+        // var quickviewbtn = document.createElement("button");
+        // quickviewbtn.setAttribute("class","quickviewbtn");
+        // quickviewbtn.textContent = "Quick View";
+
+
+        innerDiv.append(strikedOffPrice, price, discPercent, star);
 
         div.append(wishlistIcon,image, prodName, innerDiv);
         var prodDiv = document.querySelector(".displayProducts");
+
+       
+
         prodDiv.append(div);
+        // if(window.matchMedia("(min-width:800px)").matches){
+        //     div.addEventListener("mouseenter",function(){
+        //         quickviewbtn.style.display = "block"
+        //     })
+        //     div.addEventListener("mouseleave",function(){
+        //         quickviewbtn.style.display = "none"
+        //     })
+
+            // document.querySelector(".quickviewbtn").addEventListener("click",function(){
+            //     localStorage.setItem("quickViewProduct",JSON.stringify(elem));
+            //     document.querySelector(".quickview").style.display = "block";
+            //     showQuickView()
+            //     div.removeEventListener("click", function(){
+            //         window.location.href = "individualProduct.html"
+            //         // document.querySelector(".quickview").style.display = "block";
+            //         // showQuickView()
+            //     })
+
+            
+
+        
+        
 
         
         
@@ -862,6 +899,8 @@ document.querySelector("#flexofThree").addEventListener("click", function(){
     console.log("30%");
     for(var i =0; i<prodData.length; i++){
         document.querySelectorAll(".productDiv")[i].style.flex = "25%"
+        document.querySelector("#flexOfFour").style.backgroundColor = "lightgrey";
+        document.querySelector("#flexofThree").style.backgroundColor="black";
     }
     
 });
@@ -869,8 +908,9 @@ document.querySelector("#flexofThree").addEventListener("click", function(){
 document.querySelector("#flexOfFour").addEventListener("click", function(){
     for(var i =0; i<prodData.length; i++){
         document.querySelectorAll(".productDiv")[i].style.flex = "20%"
+        document.querySelector("#flexOfFour").style.backgroundColor = "black";
+        document.querySelector("#flexofThree").style.backgroundColor="lightgrey";
     }
-    console.log("25%")
 })
 
 function showQuickView(){
