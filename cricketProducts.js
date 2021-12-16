@@ -708,7 +708,7 @@ var crickproddata = [
 localStorage.setItem("cricketDatabase",JSON.stringify(crickproddata));
 
 var prodData = JSON.parse(localStorage.getItem("cricketDatabase"));
-
+var cart = JSON.parse(localStorage.getItem("shoppingCart"))||[];
 displayProducts(prodData);
 
 function displayProducts(arr){
@@ -731,11 +731,11 @@ function displayProducts(arr){
         prodName.textContent = elem.name;
     
         var strikedOffPrice = document.createElement("p");
-        strikedOffPrice.textContent = elem.strikedOffPrice;
+        strikedOffPrice.textContent = "₹"+elem.strikedOffPrice;
         strikedOffPrice.style.textDecoration = "line-through";
     
         var price = document.createElement("p");
-        price.textContent = elem.price;
+        price.textContent = "₹"+elem.price;
     
         var discPercent = document.createElement('p');
         var discount= Math.floor(((elem.strikedOffPrice-elem.price)/elem.strikedOffPrice)*100);
@@ -752,6 +752,11 @@ function displayProducts(arr){
         
     })
     document.querySelector("#itemsFound").textContent = "Found "+arr.length + " item(s)";    
+}
+
+function discount(num1, num2){
+    var disc = Math.floor(((num1-num2)/num1)*100);
+    return disc;
 }
 
 document.querySelector("#sortBy").addEventListener("change",sortBy);
@@ -883,23 +888,42 @@ function showQuickView(){
     img.setAttribute("src",product.imgUrl);
 
     var strikedprc = document.createElement("p");
-    strikedprc.textContent = product.strikedOffPrice;
+    strikedprc.textContent = "₹"+product.strikedOffPrice;
     strikedprc.style.textDecoration = "line-through";
 
     var prc = document.createElement("p");
-    prc.textContent = product.price;
+    prc.textContent = "₹"+product.price;
 
-    // var discount = document.createElement("p");
-    // discount.textContent = product.discount;
+    var discount = document.createElement("p");
+    var x = Math.floor(((product.strikedOffPrice-product.price)/product.strikedOffPrice)*100)
+    discount.textContent = x+ "%";
+    discount.style.color = "orange";
     
     var description = document.createElement("p");
     description.textContent = product.description;
 
-    document.querySelector(".quickview").append(prodName);
-    document.querySelector(".quickViewImg").append(img);
+    // document.querySelector(".quickview").append();
+    document.querySelector(".quickViewImg").append(prodName,img);
 
     document.querySelector(".quickdesc").append(description);
-    document.querySelector(".quantityPriceDisc").append(strikedprc, prc);
+    document.querySelector(".quantityPriceDisc").append(strikedprc, prc, discount);
+
+    document.querySelector("#addToCart").addEventListener("click",function(){
+        var qty = document.querySelector("#qty").value
+        if(qty==null||qty==""){
+            qty =1;
+        }
+        var cartobj = {
+            image: product.imgUrl,
+            product_name: product.name,
+            product_price: product.price,
+            quantity: qty,
+        }
+        cart.push(cartobj);
+        localStorage.setItem("shoppingCart",JSON.stringify(cart));
+        document.querySelector(".quickview").style.display = "none";
+
+    })
     
 }
 document.querySelector("#closequickview").addEventListener("click", function(){

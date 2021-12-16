@@ -1,5 +1,5 @@
 var arr = JSON.parse(localStorage.getItem("shoppingCart"))
-// console.log(arr);
+console.log(arr);
 
 // function show(){
 //     var k = document.getElementById('discount')
