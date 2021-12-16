@@ -1,0 +1,55 @@
+<!-- shoppingCart -->
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="./cart.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART</title>
+</head>
+<body>
+    <div id="container"></div>
+    <button onclick="addData(arr)">add</button>
+
+        
+    
+    
+</body>
+</html>
+<script>
+
+    var arr = [{
+  "image": "http://dummyimage.com/112x100.png/ff4444/ffffff",
+  "product_name": "Juice - Orange, 341 Ml",
+  "product_price": 57,
+  "quantity": 4
+}, {
+  "image": "http://dummyimage.com/197x100.png/dddddd/000000",
+  "product_name": "Crab - Soft Shell",
+  "product_price": 77,
+  "quantity": 2
+}, {
+  "image": "http://dummyimage.com/209x100.png/dddddd/000000",
+  "product_name": "Wine - Sogrape Mateus Rose",
+  "product_price": 99,
+  "quantity": 5
+}, {
+  "image": "http://dummyimage.com/154x100.png/cc0000/ffffff",
+  "product_name": "Foie Gras",
+  "product_price": 53,
+  "quantity": 3
+}, {
+  "image": "http://dummyimage.com/141x100.png/ff4444/ffffff",
+  "product_name": "Cake - Dulce De Leche",
+  "product_price": 84,
+  "quantity": 3
+}]
+    function addData(arr){
+
+
+localStorage.setItem("shoppingCart",JSON.stringify(arr))
+
+}
+
+</script>

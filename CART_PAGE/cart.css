@@ -1,0 +1,221 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+#masterDiv{
+    width:100%;
+    margin:auto;
+}
+
+.flexItem{
+    width: 98.95%;
+    margin: auto;
+    display: flex;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+#discount{
+    display: none;
+    width:15%;
+}
+.outline{
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+#one{
+    width:100%;   
+}
+#two{
+    width:100%;
+}
+#three{
+    width:100%;
+}
+#four{
+    width:100%;
+}
+#five{
+    width:99%;
+}
+#six{
+    width:99%;
+    border-bottom: 1px solid;
+}
+#first{
+    min-width:55%;
+}
+#sec{
+    min-width:11%;
+}
+#thr{
+    min-width:13%;
+}
+#for{
+    min-width:11%;
+
+}
+#onemore{
+    min-width:10%;
+
+}
+.five{
+    width:100%;
+}
+.newImage{
+    width: 100px;
+    height: 88px;
+    border:1px solid;
+    margin: 5px 5px 5px 5px;
+
+}
+.flexBox{
+    min-width: 55%;
+    display: flex;
+    border-bottom:1px solid;
+    border-right:1px solid;
+    /* padding:5px; */
+    column-gap: 10px;
+}
+.randomO{
+    width: 11%;
+    height:100px;
+    border-bottom:1px solid;
+    border-right:1px solid;
+    /* padding:5px; */
+}
+.randomT{
+    width: 13%;
+    height:100px;
+    border-bottom:1px solid;
+    border-right:1px solid;
+    /* padding:5px; */
+}
+.randomTh{
+    width: 11%;
+    height:100px;
+    border-bottom:1px solid;
+    border-right:1px solid;
+    /* padding:5px; */
+}
+.randomF{
+    width: 11%;
+    height:100px;
+    border-bottom:1px solid;
+    border-right:1px solid;
+    /* padding:5px; */
+}
+.randomFi{
+    width: 10%;
+    height:100px;
+    border-bottom:1px solid;
+    /* border-right:1px solid; */
+    /* padding:5px; */
+}
+.newData{
+    display: flex;
+    width: 98.95%;
+    margin: auto;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+.final{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 5px;;
+    margin-right: 5px;
+}
+#color{
+    color:white;
+    background-color: coral;
+
+}
+.location{
+    width:99%;
+    height:auto;
+    border:1px solid red;
+    margin:auto;
+    margin-top: 10px;
+}
+.main1{
+    display: flex;
+    width:100%;
+
+}
+#stotal{
+    width:60%;
+    text-align: right;
+    border-bottom: 1px solid black;
+
+}
+.amount{
+    width:40%;
+    text-align: right;
+    border-bottom: 1px solid black;
+    
+
+}
+.location>p{
+    border-bottom: 1px solid black;
+
+
+}
+.box{
+    width:80px;
+    height:35px;
+    border:1px solid;
+    margin-top: 10px;
+    padding:5px;
+    color:white;
+    background-color: gray;
+    text-align: center;
+
+    
+    
+}
+#front{
+    display: flex;
+    width: 99.3%;
+    margin: auto;
+}
+.box2{
+    margin-top: 10px;
+    margin-left: 15px;;
+
+
+}
+#coupen{
+    width:400px;
+    margin-left: 15px;
+    
+}
+.get{
+    margin: 10px 0 0 0.4%;
+}
+.final2{
+    margin-left: 460px;
+    margin-top: 10px;
+
+    
+}
+.clickn{
+    background-color: gray;
+    color:white;
+    padding: 3px;
+    
+}
+.cartdiv{
+    position: relative;
+}
+#counter{
+    position: absolute;
+    top:5px;
+    right: 142px;
+    width: 14px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    padding-left: 5px;
+}
