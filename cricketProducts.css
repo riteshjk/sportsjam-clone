@@ -58,22 +58,84 @@
     width: 50%;
     height: 400px;
     margin:auto;
-    background-color: rgb(224, 224, 180);
+    background-color: white;
     border: 5px solid orange;
     
 }
-.quickview>table{
-    width: 100%;
+#qvstructure{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
 }
-.quickViewImg{
-    width: 200px;
-    display: inline;
+#quickviewRight {
+    display: grid;
+    grid-template-rows: 50px 400px;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-areas: 
+    ". . x"
+    "d d d";
 }
-.quickViewImg>img{
-    width: 200px;
+.quickviewbtns{
+    grid-area: x;
+    
+}
+.quickviewbtns>button{
+    color: grey;
+}
+.quickviewbtns span{
+    border-right: 1px solid grey;
+}
+.quickviewdetailes{
+    grid-area: d;
+    margin-top: 50px;
+}
+#quickviewtop {
+    display: flex;
+    justify-content: space-between;
 }
 
-.quickviewbtns{
+.quickViewImg>img{
+    width: 90%;
+    border: 1px solid grey;
+}
+.quickviewdetailes>h3{
+    margin-bottom: 0;
+    border-bottom: 1px solid black;
+}
+.quickdesc>p{
+    border: 1px solid grey;
+    color: grey;
+    padding: 20px;
+    margin-top: 0;
+    width: 90%;
+}
+
+#quickviewBottom{
+    display: flex;
+}
+.quantityPriceDisc>p{
     display: inline;
-    margin-left: 90%;
+    margin: 0 10px;
+}
+.quantityPriceDisc>p:first-child{
+    display: inline;
+    margin: 0 10px;
+    color: grey;
+}
+#qty {
+    height: 20px;
+    width: 30px;
+}
+
+
+.quickviewbtns{
+    display: block;
+    justify-content: flex-end;
+}
+#addToCart{
+    margin-top: 20px;
+    background-color: rgb(255, 102, 0);
+    color: white;
+    border: none;
+    padding: 8px 12px;
 }
