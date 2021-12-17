@@ -4,8 +4,13 @@ shoppingCart = cart database
 
 var englishWillow = {
         imgUrl:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/YWCEW5000.jpg",
+        category:"English Willow Bats",
         name:"YWC Yuvi 5000 English Willow Cricket Bat",
         strikedOffPrice: 11999,
+        description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price: 10799,
-        category: "English Willow Bats"
     }
+
+    The database will be set up according to above design
