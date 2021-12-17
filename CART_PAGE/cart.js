@@ -131,11 +131,12 @@ function decrement(qty,ind){
 function total(gtotal){
 var apply = document.getElementById('apply');
 m.innerHTML = "₹"+gtotal;
-j.innerHTML = "₹"+(gtotal*12)/100
+j.innerHTML = "₹"+(gtotal*12)/100 ;
 
 if(gtotal > 500){
     l.innerHTML = "₹"+0;
-    w.innerHTML = "₹"+ (gtotal + (gtotal*12)/100);
+    var f =  (gtotal + (gtotal*12)/100);
+    w.innerHTML="₹"+ (f.toFixed(2))
 
     apply.onclick= function(){
 
@@ -159,7 +160,7 @@ else{
 
         // var x=document.getElementsByClassName("clickn")
         var code=document.getElementById("coupen").value;
-    var f = (gtotal + (gtotal*12)/100+60);
+    var f = (gtotal + (gtotal*12)/100+60) ;
     if(code=="masai10"){
         var x=(f - (f*10)/100);
         w.innerHTML = "₹"+ (x.toFixed(2));
