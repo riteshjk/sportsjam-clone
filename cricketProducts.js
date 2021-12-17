@@ -974,3 +974,5 @@ document.querySelector("#closequickview").addEventListener("click", function(){
     // //console.log("close")
     document.querySelector(".quickview").style.display = "none";
 })
+
+document.querySelector("#counter").textContent = cart.length;
