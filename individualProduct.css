@@ -689,3 +689,19 @@ img[src="https://www.clipartmax.com/png/middle/137-1378401_refer-a-friend-materi
     width:100%;
   }
   
+  @media screen and (min-width: 0px) and (max-width:480px) {
+    .mainPage{
+      display: block;
+      width: 90%;
+      padding: 2%;
+    }
+    #desc>h1{
+      font-size: 18px;
+      border: none;
+    }
+    .img>img{
+      width: 80%;
+      margin:auto
+    }
+    
+  }
