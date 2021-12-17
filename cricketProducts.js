@@ -6,6 +6,8 @@ var crickproddata = [
         name:"YWC Yuvi 5000 English Willow Cricket Bat",
         strikedOffPrice: 11999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price: 10799,
         
     },{
@@ -14,6 +16,8 @@ var crickproddata = [
         name:"YWC Yuvi 7000 English Willow Cricket Bat",
         strikedOffPrice: 14999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:14499,
     },{
         imgUrl:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/YWCEW12000.jpg",
@@ -21,6 +25,8 @@ var crickproddata = [
         name:"YWC Yuvi 12000 English Willow Cricket Bat",
         strikedOffPrice:27999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:25199,
     },
     {
@@ -29,6 +35,8 @@ var crickproddata = [
         name:"YWC Yuvi 3000 English Willow Cricket Bat",
         strikedOffPrice:8499,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:7649,        
     },
     {
@@ -37,6 +45,8 @@ var crickproddata = [
         name:"YWC Yuvi 1000 English Willow Cricket Bat",
         strikedOffPrice:5999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:5399, 
     },
     {
@@ -45,6 +55,8 @@ var crickproddata = [
         name:"Puma Evo Speed 4 Cricket Bat",
         strikedOffPrice:8799,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:5299, 
     },
     {
@@ -53,6 +65,8 @@ var crickproddata = [
         name:"DSC Condor Pro Cricket Bat",
         strikedOffPrice:37749,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:30199, 
     },
     {
@@ -61,6 +75,8 @@ var crickproddata = [
         name:"DSC Condor Patrol Cricket Bat",
         strikedOffPrice:22649,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:18199, 
     },
     {
@@ -69,6 +85,8 @@ var crickproddata = [
         name:"DSC Condor Surge Cricket Bat",
         strikedOffPrice:19999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:15999, 
     },
     {
@@ -77,6 +95,8 @@ var crickproddata = [
         name:"DSC Condor Motion Cricket Bat",
         strikedOffPrice:11199,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:8959, 
     },
     {
@@ -85,6 +105,8 @@ var crickproddata = [
         name:"DSC Intense Speed Cricket Bat",
         strikedOffPrice:25299,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:20239, 
     },
     {
@@ -93,6 +115,8 @@ var crickproddata = [
         name:"DSC Intense Pro Cricket Bat",
         strikedOffPrice:37749,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:30199, 
     },
     {
@@ -101,6 +125,8 @@ var crickproddata = [
         name:"DSC Intense Passion Cricket Bat",
         strikedOffPrice:17379,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:13903, 
     },
     {
@@ -109,6 +135,8 @@ var crickproddata = [
         name:"DSC Condor Glider Cricket Bat",
         strikedOffPrice:14829,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:11863, 
     },
     {
@@ -117,6 +145,8 @@ var crickproddata = [
         name:"DSC Condor Flite Cricket Bat",
         strikedOffPrice:30479,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:24383, 
     },
     {
@@ -125,6 +155,8 @@ var crickproddata = [
         name:"DSC Intense Shoc Cricket Bat",
         strikedOffPrice:12999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:10399, 
     },
     {
@@ -133,6 +165,8 @@ var crickproddata = [
         name:"DSC Intense Rage Cricket Bat",
         strikedOffPrice:10049,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:8039, 
     },
     {
@@ -141,6 +175,8 @@ var crickproddata = [
         name:"DSC Vexer 100 Cricket Bat",
         strikedOffPrice:6899,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:5175, 
     },
     {
@@ -149,6 +185,8 @@ var crickproddata = [
         name:"DSC Condor Atmos Cricket Bat",
         strikedOffPrice:9049,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:6799, 
     },
     {
@@ -157,6 +195,8 @@ var crickproddata = [
         name:"DSC Condor Drive Cricket Bat",
         strikedOffPrice:6899,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:5175, 
     },
     {
@@ -165,6 +205,8 @@ var crickproddata = [
         name:"DSC Intense Attitude Cricket Bat",
         strikedOffPrice:8149,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:6099, 
     },
     {
@@ -173,6 +215,8 @@ var crickproddata = [
         name:"GM Neon 303 Cricket Bat",
         strikedOffPrice:6379,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:5099, 
     },
     {
@@ -181,6 +225,8 @@ var crickproddata = [
         name:"GM Neon 333 Cricket Bat",
         strikedOffPrice:7449,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:5949, 
     },
     {
@@ -189,6 +235,8 @@ var crickproddata = [
         name:"SS Master 5000 Cricket Bat",
         strikedOffPrice:10800,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:8640, 
     },
     {
@@ -197,6 +245,8 @@ var crickproddata = [
         name:"SS Ton Silver Edition Cricket Bat",
         strikedOffPrice:16200,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:12150, 
     },
     {
@@ -205,6 +255,8 @@ var crickproddata = [
         name:"Adidas Libro League EW Cricket Bat",
         strikedOffPrice:5599,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:3649, 
     },
     {
@@ -213,6 +265,8 @@ var crickproddata = [
         name:"Adidas Pellara Leauge EW Cricket Bat",
         strikedOffPrice:5599,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:3649, 
     },
     {
@@ -221,6 +275,8 @@ var crickproddata = [
         name:"Adidas Pellara Mace EW Cricket Bat",
         strikedOffPrice:7999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:5199, 
     },
     {
@@ -229,6 +285,8 @@ var crickproddata = [
         name:"Adidas Pellara CX 11 EW Cricket Bat",
         strikedOffPrice:5999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:3899, 
     },
     {
@@ -237,6 +295,8 @@ var crickproddata = [
         name:"Adidas Libro CX 11 EW Cricket Bat",
         strikedOffPrice:6299,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:4099, 
     },
     {
@@ -245,6 +305,8 @@ var crickproddata = [
         name:"Adidas Pellara Club EW Cricket Bat",
         strikedOffPrice:6999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:4549, 
     },
     {
@@ -253,6 +315,8 @@ var crickproddata = [
         name:"Adidas Libro Mace EW Cricket Bat",
         strikedOffPrice:7599,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:4949, 
     },
     {
@@ -261,6 +325,8 @@ var crickproddata = [
         name:"Adidas Libro Club EW Cricket Bat",
         strikedOffPrice:6999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:4549, 
     },
     {
@@ -269,6 +335,8 @@ var crickproddata = [
         name:"GM SIX6 F2 505 Cricket Bat",
         strikedOffPrice:9825,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:8843, 
     },
     {
@@ -277,6 +345,8 @@ var crickproddata = [
         name:"GM SIX6 F2 707 Cricket Bat",
         strikedOffPrice:13825,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:12443, 
     },
     {
@@ -285,6 +355,8 @@ var crickproddata = [
         name:"GM SIX6 F2 Excalibur Cricket Bat",
         strikedOffPrice:25499,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:22949, 
     },
     {
@@ -293,6 +365,8 @@ var crickproddata = [
         name:"GM SIGMA F2 808 Cricket Bat",
         strikedOffPrice:16025,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:14423, 
     },
     {
@@ -301,6 +375,8 @@ var crickproddata = [
         name:"GM Aura F2 Excalibur Cricket Bat",
         strikedOffPrice:25499,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:22949, 
     },
     {
@@ -309,6 +385,8 @@ var crickproddata = [
         name:"SS Ton Rampage Cricket Bat",
         strikedOffPrice:4500,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:3600, 
     },
     {
@@ -317,6 +395,8 @@ var crickproddata = [
         name:"Kookaburra Menace 450 Cricket Bat",
         strikedOffPrice:10999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:8799, 
     },
     {
@@ -325,6 +405,8 @@ var crickproddata = [
         name:"DSC Intense Attitude Cricket Bat",
         strikedOffPrice:8149,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:6099, 
     },
     {
@@ -333,6 +415,8 @@ var crickproddata = [
         name:"GM Neon 303 Cricket Bat",
         strikedOffPrice:6379,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:5099, 
     },
     {
@@ -341,6 +425,8 @@ var crickproddata = [
         name:"GM Neon 333 Cricket Bat",
         strikedOffPrice:7499,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:5949, 
     },
     {
@@ -349,6 +435,8 @@ var crickproddata = [
         name:"SS Master 5000 Cricket Bat",
         strikedOffPrice:10800,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:8640, 
     },
     {
@@ -357,6 +445,8 @@ var crickproddata = [
         name:"SS Ton Silver Edition Cricket Bat",
         strikedOffPrice:16200,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:12150, 
     },
     {
@@ -365,6 +455,8 @@ var crickproddata = [
         name:"Adidas Libro League EW Cricket Bat",
         strikedOffPrice:5599,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:3649, 
     },
     {
@@ -373,6 +465,8 @@ var crickproddata = [
         name:"Adidas Pellara Leauge EW Cricket Bat",
         strikedOffPrice:5999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:3649, 
     },
     {
@@ -381,6 +475,8 @@ var crickproddata = [
         name:"Adidas Pellara Mace EW Cricket Bat",
         strikedOffPrice:7999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:5199, 
     },
     {
@@ -389,6 +485,8 @@ var crickproddata = [
         name:"Adidas Pellara CX 11 EW Cricket Bat",
         strikedOffPrice:5999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:3899, 
     },
     {
@@ -397,6 +495,8 @@ var crickproddata = [
         name:"Adidas Libro CX 11 EW Cricket Bat",
         strikedOffPrice:6299,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:4099, 
     },
     {
@@ -405,6 +505,8 @@ var crickproddata = [
         name:"Adidas Pellara Club EW Cricket Bat",
         strikedOffPrice:6999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:4549, 
     },
     {
@@ -413,6 +515,8 @@ var crickproddata = [
         name:"Adidas Libro Mace EW Cricket Bat",
         strikedOffPrice:7599,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:4949, 
     },
     {
@@ -421,6 +525,8 @@ var crickproddata = [
         name:"Adidas Libro Club EW Cricket Bat",
         strikedOffPrice:6999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:4549, 
     },
     {
@@ -429,6 +535,8 @@ var crickproddata = [
         name:"GM SIX6 F2 505 Cricket Bat",
         strikedOffPrice:9825,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:8843, 
     },
     {
@@ -437,6 +545,8 @@ var crickproddata = [
         name:"GM SIX6 F2 707 Cricket Bat",
         strikedOffPrice:13825,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:12443, 
     },
     {
@@ -445,6 +555,8 @@ var crickproddata = [
         name:"GM SIX6 F2 Excalibur Cricket Bat",
         strikedOffPrice:25499,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:22949, 
     },
     {
@@ -453,6 +565,8 @@ var crickproddata = [
         name:"GM SIGMA F2 808 Cricket Bat",
         strikedOffPrice:16025,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:14423, 
     },
     {
@@ -461,6 +575,8 @@ var crickproddata = [
         name:"GM Aura F2 Excalibur Cricket Bat",
         strikedOffPrice:25499,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:22949, 
     },
     {
@@ -469,6 +585,8 @@ var crickproddata = [
         name:"SS Ton Rampage Cricket Bat",
         strikedOffPrice:4500,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:3600, 
     },
     {
@@ -477,6 +595,8 @@ var crickproddata = [
         name:"Kookaburra Menace 450 Cricket Bat",
         strikedOffPrice:10999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:8799, 
     },
     {
@@ -485,6 +605,8 @@ var crickproddata = [
         name:"SS Ton Slasher Cricket Bat",
         strikedOffPrice:11160,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:8928, 
     },
     {
@@ -493,6 +615,8 @@ var crickproddata = [
         name:"SS Ton Player Edition Cricket Bat",
         strikedOffPrice:21600,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:16200, 
     },
     {
@@ -501,6 +625,8 @@ var crickproddata = [
         name:"SS Ton Reserve Edition Cricket Bat",
         strikedOffPrice:31500,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:23625, 
     },
     {
@@ -509,6 +635,8 @@ var crickproddata = [
         name:"Puma Karbon 4000 Cricket Bat",
         strikedOffPrice:8999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:6299, 
     },
     {
@@ -517,6 +645,8 @@ var crickproddata = [
         name:"Puma Pulse 4000 Cricket Bat",
         strikedOffPrice:11999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:7199, 
     },
     {
@@ -525,6 +655,8 @@ var crickproddata = [
         name:"Kookaburra Recoil 650 Cricket Bat",
         strikedOffPrice:14999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:11999, 
     },
     {
@@ -533,6 +665,8 @@ var crickproddata = [
         name:"GM ARGON F2 DXM Original L.E. Cricket Bat",
         strikedOffPrice:31925,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:23944, 
     },
     {
@@ -541,6 +675,8 @@ var crickproddata = [
         name:"GM ARGON F2 505 Cricket Bat",
         strikedOffPrice:8915,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:6686, 
     },
     {
@@ -549,6 +685,8 @@ var crickproddata = [
         name:"SS KP Power 55 (Limited Edition) Cricket Bat",
         strikedOffPrice:14355,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:11199, 
     },
     {
@@ -557,6 +695,8 @@ var crickproddata = [
         name:"SS Max Power Cricket Bat",
         strikedOffPrice:18150,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:14157, 
     },
     {
@@ -565,6 +705,8 @@ var crickproddata = [
         name:"SS 309 Rock Cricket Bat",
         strikedOffPrice:11220,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:8415, 
     },
     {
@@ -573,6 +715,8 @@ var crickproddata = [
         name:"SS Ranger Cricket Bat",
         strikedOffPrice:10725,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:8043, 
     },
     {
@@ -581,6 +725,8 @@ var crickproddata = [
         name:"SS Gladiator Cricket Bat",
         strikedOffPrice:27225,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:20419, 
     },
     {
@@ -589,6 +735,8 @@ var crickproddata = [
         name:"SS Magnum Cricket Bat",
         strikedOffPrice:1710,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:1625, 
     },
     {
@@ -597,6 +745,8 @@ var crickproddata = [
         name:"Adidas Libro League EW Cricket Bat",
         strikedOffPrice:4499,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:2899, 
     },
     {
@@ -605,6 +755,8 @@ var crickproddata = [
         name:"SS Master 500 Cricket Bat",
         strikedOffPrice:4860,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:4131, 
     },
     {
@@ -613,6 +765,8 @@ var crickproddata = [
         name:"SS Custom Cricket Bat",
         strikedOffPrice:3080,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:2772, 
     },
     {
@@ -621,6 +775,8 @@ var crickproddata = [
         name:"SS Custom Cricket Bat",
         strikedOffPrice:4450,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:4005, 
     },
     {
@@ -629,6 +785,8 @@ var crickproddata = [
         name:"SS Sir Richard Cricket Bat",
         strikedOffPrice:8550,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:6840, 
     },
     {
@@ -637,6 +795,8 @@ var crickproddata = [
         name:"SS Heritage Cricket Bat",
         strikedOffPrice:10260,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:8208, 
     },
     {
@@ -645,6 +805,8 @@ var crickproddata = [
         name:"SS Master Cricket Bat",
         strikedOffPrice:5220,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:4200, 
     },
     {
@@ -653,6 +815,8 @@ var crickproddata = [
         name:"GM Neon 444 Cricket Bat",
         strikedOffPrice:9549,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:7949, 
     },
     {
@@ -661,6 +825,8 @@ var crickproddata = [
         name:"GM Neon 404 Cricket Bat",
         strikedOffPrice:8549,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:6849, 
     },
     {
@@ -669,6 +835,8 @@ var crickproddata = [
         name:"DSC Vexer 222 Cricket Bat",
         strikedOffPrice:10549,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:7899, 
     },
     {
@@ -677,6 +845,8 @@ var crickproddata = [
         name:"DSC Vexer 200 Cricket Bat",
         strikedOffPrice:8999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:6749, 
     },
     {
@@ -685,6 +855,8 @@ var crickproddata = [
         name:"DSC Intense Ferocity Cricket Bat",
         strikedOffPrice:5999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:4499, 
     },
     {
@@ -693,16 +865,10 @@ var crickproddata = [
         name:"Puma Evo Power 3 Cricket Bat",
         strikedOffPrice:7999,
         description: "SOme random descriptions for the time being",
+        brand:"Brand Name",
+        size: "Small",
         price:4799, 
-    },
-    {
-        imgUrl:"https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/PMEW05335801.jpg",
-        category:"English Willow Bats",
-        name:"Puma Evo Speed 7 Cricket Bat",
-        strikedOffPrice:6999,
-        description: "SOme random descriptions for the time being",
-        price:4199, 
-    },
+    }
 ]
 
 localStorage.setItem("cricketDatabase",JSON.stringify(crickproddata));
@@ -835,12 +1001,53 @@ function getAllCategories(arr){
     return uniq;
 }
 
+function getAllBrand(arr){
+    var uniq = {};
+    for(var i =0; i<arr.length; i++){
+        if(uniq[arr[i].brand]===undefined){
+            uniq[arr[i].brand] =1;
+        }
+        else{
+            uniq[arr[i].brand]++;
+        }        
+    }
+    console.log(uniq)
+    return uniq;
+}
+
+function getAllSize(arr){
+    var uniq = {};
+    for(var i =0; i<arr.length; i++){
+        if(uniq[arr[i].size]===undefined){
+            uniq[arr[i].size] =1;
+        }
+        else{
+            uniq[arr[i].size]++;
+        }        
+    }
+    console.log(uniq)
+    return uniq;
+}
+
 //Filteration Part
 var filterCategories = [];
-var uniqCategoriesobj = getAllCategories(prodData)
+var filterBrand = [];
+var filterSize = [];
+var uniqCategoriesobj = getAllCategories(prodData);
+var uniqBrandsobj = getAllBrand(prodData);
+var uniqSizesobj = getAllSize(prodData)
+
 var uniqCategoriesArr = [];
 for(var key in uniqCategoriesobj){
     uniqCategoriesArr.push(key);
+}
+var uniqBrandArr = [];
+for(var key in uniqBrandsobj){
+    uniqBrandArr.push(key);
+}
+var uniqSizeArr = [];
+for(var key in uniqSizesobj){
+    uniqSizeArr.push(key);
 }
 
 var fil = document.querySelector("#filter")
@@ -874,6 +1081,73 @@ uniqCategoriesArr.map(function(elem){
     label.textContent = `${elem} (${uniqCategoriesobj[elem]})`;
     var br = document.createElement("br")
     fil.append(ckbox, label, br);
+
+})
+
+//BRands
+uniqBrandArr.map(function(elem){
+    var ckbox = document.createElement("input");
+    ckbox.setAttribute("type","checkbox");
+    ckbox.setAttribute("value", elem);
+    ckbox.setAttribute("name","brand");
+    var elem_count = 0;
+    ckbox.addEventListener("change",function(event){
+        
+        if(elem_count%2==0){
+            filterBrand.push(elem);
+        }
+        else{
+            for(var i =0; i<filterBrand.length; i++){
+                if(filterBrand[i]==elem){
+                    filterBrand.splice(i,1);
+                    break;
+                }
+            }
+        }
+        elem_count++;
+        
+        console.log(filterBrand);
+        displayFilteredProducts();
+        
+    })
+    var label = document.createElement("label");
+    label.setAttribute("for",elem);
+    label.textContent = `${elem} (${uniqBrandsobj[elem]})`;
+    var br = document.createElement("br")
+    document.querySelector("#filterbrand").append(ckbox, label, br);
+
+})
+//Sizes
+uniqSizeArr.map(function(elem){
+    var ckbox = document.createElement("input");
+    ckbox.setAttribute("type","checkbox");
+    ckbox.setAttribute("value", elem);
+    ckbox.setAttribute("name","size");
+    var elem_count = 0;
+    ckbox.addEventListener("change",function(event){
+        
+        if(elem_count%2==0){
+            filterSize.push(elem);
+        }
+        else{
+            for(var i =0; i<filterSize.length; i++){
+                if(filterSize[i]==elem){
+                    filterSize.splice(i,1);
+                    break;
+                }
+            }
+        }
+        elem_count++;
+        
+        console.log(filterSize);
+        displayFilteredProducts();
+        
+    })
+    var label = document.createElement("label");
+    label.setAttribute("for",elem);
+    label.textContent = `${elem} (${uniqSizesobj[elem]})`;
+    var br = document.createElement("br")
+    document.querySelector("#filtersize").append(ckbox, label, br);
 
 })
 
