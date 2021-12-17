@@ -9,6 +9,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+
 /*Upper Nav start*/
 
 .nav{
@@ -134,6 +135,17 @@ body{
     font-size:18px;
     color:black;
     
+}
+#counter{
+    position: absolute;
+    top:65px;
+    right: 180px;
+    width: 14px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    padding-left: 2px;
 }
 
 .category-navbar{

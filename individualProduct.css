@@ -136,6 +136,17 @@ body{
     color:black;
     
 }
+#counter{
+  position: absolute;
+  top:65px;
+  right: 180px;
+  width: 14px;
+  height: 20px;
+  border-radius: 50px;
+  background-color: red;
+  color: white;
+  padding-left: 2px;
+}
 
 .category-navbar{
     width:100%;
@@ -454,6 +465,22 @@ img[src="https://www.clipartmax.com/png/middle/137-1378401_refer-a-friend-materi
   width: 20px;
 }
 
+#cartDisplay{
+  display:none;
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  width: 150px;
+  border: 8px solid black;
+  border-top: 15px solid black;
+}
+#cartDisplay p{
+  font-size: 12px;
+  padding: 2px;
+}
+#closeCart{
+  margin-left: 90%;
+}
 
 
 /* FOOTER CSS */
