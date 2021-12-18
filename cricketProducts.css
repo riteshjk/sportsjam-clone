@@ -149,9 +149,10 @@ body{
 }
 
 .category-navbar{
-    width:100%;
+    width:99.69%;
     height:40px;
     border:1px solid silver;
+    padding-top: 3px;
 
 }
 .category-navbar ul{
@@ -173,6 +174,7 @@ body{
     height:100%;
     font-size: 14px;
     font-weight: 600;
+    margin-top: 3px;
     float:left;
     text-align: center;
     cursor: pointer;
