@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="individualProduct.css">
-    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css">
+    <title>Buy Boxing Equipment Online India</title>
+    <link rel="stylesheet" href="footballProducts.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.css">
     <title>Home Page</title>
     <link rel="stylesheet" href="indexfooterpart.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,7 +57,7 @@
                <img src="https://www.pnglib.com/wp-content/uploads/2020/08/simple-grey-search-icon_5f34a64f04780-768x748.png" alt="">
            </div>
         </div>
-        <a href="./CART_PAGE/cart.html">
+        <a href="../cart_page/cart.html">
         <div class="cartdiv">
             <img class="cartimg" src="https://png.pngitem.com/pimgs/s/522-5226692_my-shopping-cart-icon-for-my-cart-hd.png" alt="">
             <p class="cartText">Shopping Cart</p>
@@ -449,49 +449,99 @@
     </div>
     
  <!----Drop down Menu End-->
- 
-    <div id="cartDisplay">
-        <button id="closeCart">X</button>
-        <div id="cDisplay"></div>
-    </div>
+
+
 
     <div class="mainPage">
-        <div class="img"></div>
-        <div class="details">
-            <div id="desc"></div>
-            <div id="prices"></div>  
-            <div id="btnandqty">
-                <button id="addToCart">Add to Cart</button>
-                <label for="qty">QTY:</label>
-                <span id="qtydiv">
-                    <img src="https://cdn2.iconfinder.com/data/icons/bold-application/500/plus-512.png" alt="" class="qtycontrol" id="qtyplus">
-                    <p id="qty">1</p>
-                    <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-minus-512.png" alt="" class="qtycontrol" id="qtyminus">
-            </span>
-                
-            </div>
-            <div class="smalltext">
-                <span class="smalltext"><img src="https://cdn0.iconfinder.com/data/icons/online-clothes-shopping-set/128/iStar_Design_Online_Shopping_LineIcons_Live-26-512.png" alt=""> Add to compare list</span><span class="smalltext"><img src="https://www.clipartmax.com/png/middle/137-1378401_refer-a-friend-material-design-icon-group.png" alt=""> Refer this to your friend</span>
-            </div>
-            <div id="socialMediaIcons">
-                <img src="https://assets.sg.content-cdn.io/css/themes/mjt02012432/images/main/twitter_share.png" alt="">
-                <img src="https://assets.sg.content-cdn.io/css/themes/mjt02012432/images/main/fb_share.png" alt=""><img src="https://assets.sg.content-cdn.io/css/themes/mjt02012432/images/main/gplus_share.png" alt=""><img src="https://assets.sg.content-cdn.io/css/themes/mjt02012432/images/main/pinit_share.png" alt="">
-            </div>
-            <div>
-                <p>Enter pincode to check availability</p>
-                <input type="text" name="pincode" id="pincode" placeholder="Enter Pincode">
-                <button>Check</button>
-                <span class="smalltext">Delivered in 2-5 working days*</span>
+        <div class="sidebar">
+            <div id="categoryMenu">
+                <h2>Category Menu</h2>
                 <div>
-                    <p id="report"><img src="https://previews.123rf.com/images/grgroup/grgroup1703/grgroup170302648/73144390-blurred-silhouette-oval-dialog-box-icon-vector-illustration.jpg" alt=""> Report incorrect product information</p>
+                <ul>
+                    <li>Sports
+                        <ul>
+                            <li>Boxing</li>
+                            <li>Gloves</li>
+                            <li>Bags</li>
+                            <li>Accessories</li>
+                            <li><b>Cricket</b></li>
+                            <li>English Willow</li>
+                            <li>Kashmir Willow</li>
+                            <li>Balls</li>
+                            <li>Shoes</li>
+                            <li>Kit Bags</li>
+                            <li>Cricket Sets</li>
+                            <li>Protective Gear</li>
+                            <li>Clothing</li>
+                            <li>Accessories</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div id= "refineSearch">
+                <h2>Refined Search</h2>
+                <div id="filter">
+                    <h2>Category</h2>
+
                 </div>
-            </div>      
+                <div id="filterbrand">
+                    <h2>Brand</h2>
+                </div>
+                <div id="filtersize">
+                    <h2>Size</h3>
+                </div>
+            </div>
+        </div>
+        <div class="mainContainer">
+            <div class="sortAndStuff">
+                <p id="itemsFound"></p>
+                <div id="screenchange">
+                    <p>SHOW <button id="flexofThree">3</button><button id="flexOfFour">4</button></p>
+                </div>
+               
+                <select name="sort" id="sortBy">
+                    <option value="">SORT BY</option>
+                    <option value="priceAsc">Price Low to High</option>
+                    <option value="priceDesc">Price High to Low</option>
+                    <option value="discount">Discount</option>
+                </select>
+            </div>
+            <div class="displayProducts"></div>
+        </div>
+    </div>
+    <!-- <div id="loadmorediv">
+        <button id="loadmore">LOAD MORE</button>
+    </div> -->
+    <div class="quickview">
+        <div id="qvstructure">
+            <div id="quickviewLeft"> 
+                <div class="quickViewImg"></div>
+            </div>
+            <div id="quickviewRight">
+                <div class="quickviewbtns">
+                    <button id="closequickview"><span>Close</span> X</button>
+                    <br>
+                    <button onclick="window.location.href = '../individualProduct.html'"><span>More Details</span>>></button>
+                </div>
+                <div class="quickviewdetailes">
+                    <h3>Description</h3>
+                    <div class="quickdesc">             <p></p>
+                    </div>
+                    <div id="quickviewBottom">
+                        <label for="quantity">Quantity</label>
+                        <input id="qty" name="quantity" type="number" min="1" placeholder="1">
+                        <div class="quantityPriceDisc"></div>
+                    </div>
+                    <button id="addToCart">Add To Cart</button>                 
+                </div>
+            </div>
         </div>
         
-       
     </div>
 
-<!-- Footer part -->
+
+    <!-- Footer section -->
     <div class="container">
         <div>
             <li>
@@ -587,5 +637,4 @@
     </div>
 </body>
 </html>
-
-<script src="individualProduct.js"></script>
+<script src="footballProducts.js"></script>

@@ -109,7 +109,7 @@ li {
 .copy-right {
   text-align: left;
   font-family: open sans;
-  top: 10px;
+  margin-top: 9vw;
   font-size: 12px;
   color: #dedede;
 }

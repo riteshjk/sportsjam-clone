@@ -1,4 +1,3 @@
-/* HEADER CSS */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 *{
@@ -9,6 +8,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
+
 
 /*Upper Nav start*/
 
@@ -137,21 +137,22 @@ body{
     
 }
 #counter{
-  position: fixed;
-  /* top:65px;
-  right: 180px; */
-  width: 14px;
-  height: 20px;
-  border-radius: 50px;
-  background-color: red;
-  color: white;
-  padding-left: 2px;
+    position: relative;
+    top:5px;
+    right: 140px;
+    width: 14px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    padding-left: 2px;
 }
 
 .category-navbar{
     width:99.69%;
     height:40px;
     border:1px solid silver;
+    padding-top: 3px;
 
 }
 .category-navbar ul{
@@ -173,6 +174,7 @@ body{
     height:100%;
     font-size: 14px;
     font-weight: 600;
+    margin-top: 3px;
     float:left;
     text-align: center;
     cursor: pointer;
@@ -377,118 +379,251 @@ body{
     visibility: visible;  
 }
 
+/*Dropdown Menu Starts*/
+
+
+
 /* MAIN PAGE CSS */
-.mainPage{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.mainPage {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 80%;
+    padding: 10px;
 }
-#prices{
-  display: flex;
-}
-#prices>p{
-
-  margin: 20px 10px;
-}
-#btnandqty{
-  margin-top: 20px;
-  display: flex;
-}
-#btnandqty>button{
-  background-color: orange;
-  color: white;
-  border: none;
-  padding: 10px 15px
-}
-/* #btnandqty>input{
-  border: 1px solid black;
-  width: 50px;
-  margin-left: 20px;
-} */
-#btnandqty>label{
-  margin-left: 10px;
-}
-.qtycontrol{
-  width: 20px;
-}
-.qtycontrol+input{
-  width: 20px;
-}
-#qtydiv{
-  display: flex;
-  border: 1px solid grey;
-  width: 60px;
-  margin-left: 10px;
-  height: 20px;
-}
-#desc>h1{
-  border-bottom: 1px solid grey;
-  width: 90%;
-}
-#socialMediaIcons>img {
-  margin: 10px 10px;
-}
-#socialMediaIcons>img:hover{
-  cursor: pointer;
+.maincontainer{
+    width: 100%;
 }
 
-.smalltext {
-  color:grey;
-  font-size: 14px;
-  margin: 20px 10px;
+.displayProducts{
+    display:flex;
+    flex-wrap: wrap;
 }
-.smalltext:hover{
-  cursor: pointer;
+.productDiv {
+    flex: 25%;
+    margin: 2%;
+    margin-bottom: 50px;
+    width: 200px;
+    font-family: "open sans";
+    
 }
-input+button{
-  background-color: black;
-  color: white;
-  padding: 10px;
-
+.productDiv>img:nth-child(2) {
+    width: 100%;    
 }
-button:hover{
-  cursor: pointer;
-}
-#report{
-  color: blue;
-  margin-top: 20px;
-}
-#report:hover{
-  color: orange;
-  cursor: pointer;
-}
-img[src="https://previews.123rf.com/images/grgroup/grgroup1703/grgroup170302648/73144390-blurred-silhouette-oval-dialog-box-icon-vector-illustration.jpg"]{
-  width: 20px;
-  display: inline;
-  color: blue;
-}
-img[src="https://www.clipartmax.com/png/middle/137-1378401_refer-a-friend-material-design-icon-group.png"],img[src= "https://cdn0.iconfinder.com/data/icons/online-clothes-shopping-set/128/iStar_Design_Online_Shopping_LineIcons_Live-26-512.png"]{
-  width: 20px;
-}
-
-#cartDisplay{
-  display:none;
-  position: absolute;
-  top: 100px;
-  right: 50px;
-  width: 150px;
-  border: 8px solid black;
-  border-top: 15px solid black;
-}
-#cartDisplay p{
-  font-size: 12px;
-  padding: 2px;
-}
-#closeCart{
-  margin-left: 90%;
+.productDiv>div{
+    display: flex;
+    justify-content: space-around;
 }
 
 
-/* FOOTER CSS */
+.productDiv:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.productDiv>.wlIcon{
+    width: 20px;
+    margin-left: 80%;
+}
+.sortAndStuff {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+.productDiv img{
+    width: 90%;    
+}
+
+#categoryMenu>div{
+    height: 100px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+#categoryMenu li{
+    list-style-type: none;
+    font-size: 15px;
+}
+#categoryMenu>h2, #refineSearch>h2{
+    background-color: #cacaca;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 5px;
+}
+#refineSearch h2{
+    font-size: 14px;
+    padding: 0 0 0 10px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    line-height: 40px;
+    border-bottom: 1px solid #e9e9e9;
+    font-weight: 400;
+}
+#filter input{
+    font-size: 14px;
+}
+#flexofThree{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-right: 2px;
+
+}
+#flexOfFour{
+    background-color: lightgrey;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-left: 2px;
+}
+#flexofThree:hover, #flexOfFour:hover{
+    background-color: black;
+}
+#screenchange{
+    margin: 0 50px;
+}
+#itemsFound{
+    margin-right: 15%;
+    font-size: 100.01%;
+    font-weight: 900;
+}
+
+
+#sortBy{
+    width: 250px;
+    border: 1px solid lightgrey
+}
+#loadmorediv{
+    text-align: center;
+}
+
+#loadmore{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: lightgrey;
+    color: white;
+    margin-bottom: 20px;
+}
+#loadmore:hover{
+    background-color: black;
+    cursor: pointer;
+}
+/* THe Quick view features CSS */
+.quickviewbtn{
+    /* width: 100%; */
+    height: 30px;
+    background-color: black;
+    color: white;
+    position: relative;
+    top: -50%;
+    left: 40%;
+    padding: 10 20px;
+    display: none;
+}
+.quickviewbtn:hover{
+    display: block;
+}
+
+.quickview{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 30%;
+    top:20%;
+    width: 50%;
+    height: 400px;
+    margin:auto;
+    background-color: white;
+    border: 5px solid orange;
+    
+}
+#qvstructure{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+}
+#quickviewRight {
+    display: grid;
+    grid-template-rows: 50px 400px;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-areas: 
+    ". . x"
+    "d d d";
+}
+.quickviewbtns{
+    grid-area: x;
+    
+}
+.quickviewbtns>button{
+    color: grey;
+}
+.quickviewbtns span{
+    border-right: 1px solid grey;
+}
+.quickviewdetailes{
+    grid-area: d;
+    margin-top: 50px;
+}
+#quickviewtop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quickViewImg>img{
+    width: 90%;
+    border: 1px solid grey;
+}
+.quickviewdetailes>h3{
+    margin-bottom: 0;
+    border-bottom: 1px solid black;
+}
+.quickdesc>p{
+    border: 1px solid grey;
+    color: grey;
+    padding: 20px;
+    margin-top: 0;
+    width: 90%;
+}
+
+#quickviewBottom{
+    display: flex;
+}
+.quantityPriceDisc>p{
+    display: inline;
+    margin: 0 10px;
+}
+.quantityPriceDisc>p:first-child{
+    display: inline;
+    margin: 0 10px;
+    color: grey;
+}
+#qty {
+    height: 20px;
+    width: 30px;
+}
+
+
+.quickviewbtns{
+    display: block;
+    justify-content: flex-end;
+}
+#addToCart{
+    margin-top: 20px;
+    background-color: rgb(255, 102, 0);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+}
+
+
+/* FOOTER SECTION CSS */
 .container {
     display: flex;
     justify-content: space-around;
     background-color: #e1e1e1;
     padding: 30px 0px;
+   
   }
   .container > div {
     text-align: center;
@@ -523,6 +658,7 @@ img[src="https://www.clipartmax.com/png/middle/137-1378401_refer-a-friend-materi
     text-align: left;
     font-size: 12px;
     background-color: #262626;
+    height: 300px;
   }
   .title {
     color: #dedede;
@@ -716,19 +852,34 @@ img[src="https://www.clipartmax.com/png/middle/137-1378401_refer-a-friend-materi
     width:100%;
   }
   
-  @media screen and (min-width: 0px) and (max-width:480px) {
+@media screen and (min-width: 0px) and (max-width:480px) {
     .mainPage{
-      display: block;
-      width: 90%;
-      padding: 2%;
+        display: block;
+        width: 100%;
     }
-    #desc>h1{
-      font-size: 18px;
-      border: none;
-    }
-    .img>img{
-      width: 80%;
-      margin:auto
+    #screenchange{
+        display: none;
     }
     
-  }
+}
+@media screen and (min-width:481px) and (max-width:800px) {
+    body{
+        transform: scale(0.5, 1)
+        
+    }
+    .sportsjam_logo_maindiv{
+        transform: scale(0.5);
+    }
+    #screenchange{
+        display: none;
+    }
+    .displayProducts h3, p{
+        font-size: 12px
+    }
+    .wlIcon{
+        transform: scale(0.8);
+    }
+    .WlIcon+img{
+        transform: scale(0.5);
+    }
+}

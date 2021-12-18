@@ -158,10 +158,13 @@ body {
   color: black;
 }
 
-.category-navbar {
-  width: 100%;
-  height: 40px;
-  border: 1px solid silver;
+.category-navbar{
+    width:99.89%;
+    height:30px;
+    border:1px solid silver;
+    padding-top: 8px;
+    margin: auto;
+
 }
 .category-navbar ul {
   list-style: none;
