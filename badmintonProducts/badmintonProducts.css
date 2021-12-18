@@ -518,9 +518,10 @@ body{
     padding: 10 20px;
     display: none;
 }
-.quickviewbtn:hover{
+/* .quickviewbtn:hover{
     display: block;
-}
+    width: 100%;
+} */
 
 .quickview{
     display: none;
