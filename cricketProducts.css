@@ -137,9 +137,9 @@ body{
     
 }
 #counter{
-    position: absolute;
-    top:65px;
-    right: 180px;
+    position: relative;
+    top:5px;
+    right: 140px;
     width: 14px;
     height: 20px;
     border-radius: 50px;
@@ -447,7 +447,7 @@ body{
     font-weight: 100;
     padding: 5px;
 }
-#filter h2{
+#refineSearch h2{
     font-size: 14px;
     padding: 0 0 0 10px;
     text-transform: uppercase;
@@ -860,4 +860,25 @@ body{
         display: none;
     }
     
+}
+@media screen and (min-width:481px) and (max-width:800px) {
+    body{
+        transform: scale(0.5, 1)
+        
+    }
+    .sportsjam_logo_maindiv{
+        transform: scale(0.5);
+    }
+    #screenchange{
+        display: none;
+    }
+    .displayProducts h3, p{
+        font-size: 12px
+    }
+    .wlIcon{
+        transform: scale(0.8);
+    }
+    .WlIcon+img{
+        transform: scale(0.5);
+    }
 }
