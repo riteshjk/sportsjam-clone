@@ -442,7 +442,12 @@
     <div id="masterDiv">
       <h3>SHOPPING CART</h3>
       </div>
-      <div class="flexItem">
+      <div id="notice">
+          <p>Your shopping cart is empty!!</p>
+          <p>To buy a product just search for it, using our search tool or you can also browse through the category of your choice. Just click on and experience the best online shopping experience again.
+        </p>
+      </div>
+      <div class="flexItem" id="hidden">
         <div id="first">
             <div class="outline" id="one">Product Name</div>
         </div>
@@ -455,9 +460,9 @@
       <div id="why"></div>
       <div class="final">
       <button id=different>CONTINUE SHOPPING</button>
-      <button id="color">PROCEED TO PAY</button>
+      <button onclick="goto()" id="color">PROCEED TO PAY</button>
       </div>
-      <div class="location">
+      <div class="location" id="loc">
           <div class="summary">
         <p>Order summary</p>
         </div>
@@ -491,11 +496,11 @@
         </p>
     </div>
     </div>
-    <div class="get">
+    <div class="get" id="got">
     <label for="">Voucher code</label>
     <input type="text" id="coupen">
     </div>
-    <div class="final2">
+    <div class="final2" id="got1">
     <button id="apply" class="clickn">APPLY</button>
     </div>
 
