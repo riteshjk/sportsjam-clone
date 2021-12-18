@@ -4,6 +4,7 @@ var user = JSON.parse(localStorage.getItem("userDatabase")) || [];
 
 var form = document.getElementById('form');
 var username = document.getElementById('username');
+var mobile = document.getElementById('mobileno')
 var email = document.getElementById('email');
 var password = document.getElementById('password1');
 var password2 = document.getElementById('password2');
@@ -21,8 +22,10 @@ function checkInputs() {
 	
 	var usernameValue = username.value;
 	var emailValue = email.value;
+    var mobilenoValue =mobileno.value;
 	var passwordValue = password1.value;
 	var password2Value = password2.value;
+    
 	
 	var user_right = false;
 	var email_right = false
@@ -64,6 +67,7 @@ function checkInputs() {
 		password_right = true;
 
 	}
+    console.log(window.location.href="signIn.html");
    
 	if(user_right==true&&email_right==true&&password_right==true){
        console.log(window.location.href="signIn.html");
@@ -72,6 +76,7 @@ function checkInputs() {
 		username:username.value,
 		email:email.value,
 		password:password.value,
+        mobileno:mobileno.value,
 	}
     
 	user.push(userObj);
@@ -95,5 +100,5 @@ function setSuccessFor(input) {
 	
 function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
-    console.log(window.location.href="signIn.html");
+    
 }
