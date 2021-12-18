@@ -261,7 +261,7 @@ function displayProducts(arr){
         //Clicking on image takes you to product page
         image.addEventListener("click", function(){
             localStorage.setItem("quickViewProduct",JSON.stringify(elem));
-            window.location.href = "individualProduct.html"
+            window.location.href = "../individualProduct.html"
 
         })
 
