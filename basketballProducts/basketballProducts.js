@@ -437,7 +437,7 @@ uniqCategoriesArr.map(function(elem){
         elem_count++;
         
         console.log(filterCategories);
-        displayFilteredProducts(filterCategories);
+        displayFilteredProducts();
         
     })
     var label = document.createElement("label");
@@ -471,7 +471,7 @@ uniqBrandArr.map(function(elem){
         elem_count++;
         
         console.log(filterBrand);
-        displayFilteredProducts(filterBrand);
+        displayFilteredProducts();
         
     })
     var label = document.createElement("label");
@@ -504,7 +504,7 @@ uniqSizeArr.map(function(elem){
         elem_count++;
         
         console.log(filterSize);
-        displayFilteredProducts(filterSize);
+        displayFilteredProducts();
         
     })
     var label = document.createElement("label");
@@ -515,15 +515,15 @@ uniqSizeArr.map(function(elem){
 
 })
 
-function displayFilteredProducts(arr){
+function displayFilteredProducts(){
     var total_filtered_prods = []
     displayProducts(prodData);
-    for(var i =0; i<arr.length;i++){
+    for(var i =0; i<filterCategories.length;i++){
        var filtered= prodData.filter(function(elem){
-            return (elem.category == arr[i]||elem.brand == arr[i]||elem.size==arr[i]);
+            return elem.category == filterCategories[i];
         })
         total_filtered_prods = total_filtered_prods.concat(filtered)
-        //console.log(total_filtered_prods)
+        console.log(total_filtered_prods)
         
         displayProducts(total_filtered_prods);       
     }
