@@ -164,11 +164,23 @@ function addedtocart(arr){
 addedtocart(arr);
 
 function remove(ind){
-arr.splice(ind, 1)
-// event.target.parentNode.remove();
-console.log(arr)
-localStorage.setItem("shoppingCart",JSON.stringify(arr));
-addedtocart(arr);
+    var t = document.getElementById('counter');
+    if(ind != 0){
+
+        arr.splice(ind, 1)
+        // event.target.parentNode.remove();
+        console.log(arr)
+        localStorage.setItem("shoppingCart",JSON.stringify(arr));
+        addedtocart(arr);
+    }
+    else if(ind == 0){
+        arr.splice(ind, 1)
+        // event.target.parentNode.remove();
+        console.log(arr)
+        localStorage.setItem("shoppingCart",JSON.stringify(arr));
+        t.style.display="none"
+        addedtocart(arr);
+    }
 }
 
 function increment(qty,ind){

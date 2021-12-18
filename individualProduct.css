@@ -471,6 +471,9 @@ img[src="https://www.clipartmax.com/png/middle/137-1378401_refer-a-friend-materi
   top: 100px;
   right: 50px;
   width: 150px;
+  max-height: 500px;
+  overflow: scroll;
+  overflow-x: hidden;
   border: 8px solid black;
   border-top: 15px solid black;
 }
