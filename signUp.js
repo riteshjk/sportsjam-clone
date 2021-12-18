@@ -1,75 +1,99 @@
 
-	var userData = JSON.parse(localStorage.getItem("UserDatabase")) || [];
-
-	var email = document.forms['form']['email'];
-	var password = document.forms['form']['password'];
-	
-	var email_error = document.getElementById('email_error');
-	var pass_error = document.getElementById('pass_error');
-
-	email.addEventListener('textInput', email_Verify);
-	password.addEventListener('textInput', pass_Verify);
-
-  //  form.addEventListener('submit', function(elem) {
-   //     elem.preventDefault();
-        
-    //    user();
-        
-    
-  //  });
-    
-    var user = {
-        userEmail:email.value,
-        userPassword:password.value,
-    }
-    userData.push(user);
-    localStorage.setItem("userDatabase",JSON.stringify(userData))
-
    
+var user = JSON.parse(localStorage.getItem("userDatabase")) || [];
+
+var form = document.getElementById('form');
+var username = document.getElementById('username');
+var email = document.getElementById('email');
+var password = document.getElementById('password1');
+var password2 = document.getElementById('password2');
+
+form.addEventListener('submit', function(elem) {
+	elem.preventDefault();
 	
-	function validated(){
-        var emailValue = email.value;
-        var passwordValue = password.value;
-    
-		if (email.value.length < 9) {
-			email.style.border = "1px solid red";
-			email_error.style.display = "block";
-			email.focus();
-			return false;
-		}
-		if (password.value.length < 6) {
-			password.style.border = "1px solid red";
-			pass_error.style.display = "block";
-			password.focus();
-			return false;
-		}
+	checkInputs();
 	
+
+});
+
+
+function checkInputs() {
+	
+	var usernameValue = username.value;
+	var emailValue = email.value;
+	var passwordValue = password1.value;
+	var password2Value = password2.value;
+	
+	var user_right = false;
+	var email_right = false
+	var password_right = false
+
+	if(usernameValue === '') {
+		setErrorFor(username, 'Username cannot be blank');
+	} else {
+		setSuccessFor(username);
+		user_right=true;
 	}
-	function email_Verify(){
-		if (email.value.length >= 8) {
-			email.style.border = "1px solid silver";
-			email_error.style.display = "none";
-			return true;
-		}
-	}
-	function pass_Verify(){
-		if (password.value.length >= 5) {
-			password.style.border = "1px solid silver";
-			pass_error.style.display = "none";
-			return true;
-            
-            }
-		}
 	
+	if(emailValue === '') {
+		setErrorFor(email, 'Email cannot be blank');
+	} else if (!isEmail(emailValue)) {
+		setErrorFor(email, 'Not a valid email');
+	} else {
+		setSuccessFor(email);
+		email_right=true;
+	}
+	
+	if(passwordValue === '') {
+		setErrorFor(password, 'Password cannot be blank');
+		
+	} else {
+		setSuccessFor(password);
+		
+		
+		
+	}
+	
+	if(password2Value === '') {
+		setErrorFor(password2, 'Password cannot be blank');
 
+	} else if(passwordValue !== password2Value) {
+		setErrorFor(password2, 'Password does not match');
+	} else{
+		setSuccessFor(password2);
+		password_right = true;
 
-
-
-
-     
-	function btnClick(){
-        document.location.href="home page.html";
-    }
-  
+	}
    
-   
+	if(user_right==true&&email_right==true&&password_right==true){
+       console.log(window.location.href="signIn.html");
+		console.log(username.value)
+	    var userObj = {
+		username:username.value,
+		email:email.value,
+		password:password.value,
+	}
+    
+	user.push(userObj);
+	localStorage.setItem("userDatabase",JSON.stringify(user));
+	}
+    
+
+}
+
+function setErrorFor(input, message) {
+	const formControl = input.parentElement;
+	const small = formControl.querySelector('small');
+	formControl.className = 'miniform error';
+	small.innerText = message;
+}
+
+function setSuccessFor(input) {
+	const formControl = input.parentElement;
+	formControl.className = 'miniform success';
+}
+	
+function isEmail(email) {
+	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+    console.log(window.location.href="signIn.html");
+}

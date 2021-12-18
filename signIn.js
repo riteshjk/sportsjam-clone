@@ -50,6 +50,7 @@
 			email.style.border = "1px solid silver";
 			email_error.style.display = "none";
 			return true;
+			console.log(document.location.href="home page.html");
 		}
 	}
 	function pass_Verify(){
@@ -57,19 +58,15 @@
 			password.style.border = "1px solid silver";
 			pass_error.style.display = "none";
 			return true;
-            
+            console.log(document.location.href="home page.html");
             }
 		}
-	
+		function btnClick(){
+			document.location.href="home page.html";
+		}
 
 
 
 
 
-     
-	function btnClick(){
-        document.location.href="home page.html";
-    }
-  
-   
    
