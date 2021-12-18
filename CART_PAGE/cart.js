@@ -1,5 +1,5 @@
 var arr = JSON.parse(localStorage.getItem("shoppingCart"))
-
+var arr2 = JSON.parse(localStorage.getItem("discount"))
 console.log(arr);
 
 
@@ -16,6 +16,8 @@ var m = document.getElementById('tamount');
 var l = document.getElementById('edcAmount');
 var j = document.getElementById('gstAmount');
 var w = document.getElementById('tcAmount');
+var app = document.getElementById('apply');
+var cou = document.getElementById('coupen');
 
 
 
@@ -207,6 +209,7 @@ function decrement(qty,ind){
 }
 function total(gtotal){
 var apply = document.getElementById('apply');
+var span = document.getElementById('span');
 m.innerHTML = "₹"+gtotal;
 j.innerHTML = "₹"+(gtotal*12)/100 ;
 
@@ -224,7 +227,9 @@ if(gtotal > 500){
         var x=(f - (f*10)/100);
         w.innerHTML = "₹"+ (x.toFixed(2));
         localStorage.setItem("discount",JSON.stringify(x.toFixed(2)));
-    
+        span.style.display="inherit"
+        app.style.display="none"
+        cou.style.display="none"
     }
     else{
         alert("Please Enter Valid Coupen Code")
@@ -240,8 +245,12 @@ else{
         var code=document.getElementById("coupen").value;
     var f = (gtotal + (gtotal*12)/100+60) ;
     if(code=="masai10"){
+        
         var x=(f - (f*10)/100);
         w.innerHTML = "₹"+ (x.toFixed(2));
+        span.style.display="inherit"
+        app.style.display="none"
+        cou.style.display="none"
     
     }
     else{
@@ -255,5 +264,9 @@ else{
 function goto(){
     window.location.href="../paymentpage.html"
 }
-
+if(arr2 != null){
+    span.style.display="inherit"
+    app.style.display="none"
+    cou.style.display="none"
+}
 
