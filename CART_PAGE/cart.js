@@ -1,5 +1,8 @@
 var arr = JSON.parse(localStorage.getItem("shoppingCart"))
+
 console.log(arr);
+
+
 
 // function show(){
 //     var k = document.getElementById('discount')
@@ -20,11 +23,28 @@ var w = document.getElementById('tcAmount');
 
 
 function addedtocart(arr){
+    console.log(arr);
+    var dis= document.getElementById('hidden');
     var t = document.getElementById('counter');
+    var not = document.getElementById('notice');
+    var col = document.getElementById('color');
+    var loc = document.getElementById('loc');
+    var front = document.getElementById('front');
+    var got = document.getElementById('got');
+    var got1 = document.getElementById('got1');
     var gtotal=0;
     var count = 0;
     var newData = document.getElementById("why")
     newData.textContent = "";
+    if(arr.length <= 0){
+        not.style.display="inherit"
+        dis.style.display="none"
+        col.style.display="none"
+        loc.style.display="none"
+        front.style.display="none"
+        got.style.display="none"
+        got1.style.display="none"
+    }
     
     
 
@@ -57,6 +77,9 @@ function addedtocart(arr){
 
         var qDiv = document.createElement("div")
         var qDiv2 = document.createElement("div")
+        var newDiv=document.createElement("div")
+        newDiv.setAttribute("class","size3")
+        newDiv.textContent=ele.quantity;
         var nbtn=document.createElement("button")
         nbtn.textContent="-"
         nbtn.setAttribute("class","size")
@@ -64,17 +87,21 @@ function addedtocart(arr){
         var pbtn=document.createElement("button")
         pbtn.textContent="+"
         pbtn.setAttribute("class","size1")
-
-
+        
+        
         pbtn.setAttribute("onclick",`increment(${ele.quantity}, ${ind})`)
         nbtn.setAttribute("onclick",`decrement(${ele.quantity}, ${ind})`)
-        qDiv2.append(nbtn,ele.quantity,pbtn)
+        qDiv2.append(nbtn,newDiv,pbtn)
         qDiv.append(qDiv2)
-        qDiv2.setAttribute("class","randommargin")                
+
+        qDiv.append(qDiv2)
+        qDiv2.setAttribute("class","randommargin size2")                
         count += ele.quantity; 
         t.innerHTML=count;
         if(count >= 1){
+            not.style.display="none"
             t.style.display="inherit"
+
         }
         // console.log(ele)
         // Quantity.append(qDiv)
@@ -126,6 +153,9 @@ function addedtocart(arr){
     total(gtotal)
     document.querySelector("#different").addEventListener("click",function(){
              window.location.href="../cricketProducts.html";
+
+    
+     
     })
 
 }
@@ -148,16 +178,32 @@ addedtocart(arr);
 
 function decrement(qty,ind){
     var t = document.getElementById('counter');
+    var not = document.getElementById('notice');
+    var dis= document.getElementById('hidden');
+    var col = document.getElementById('color');
+    var loc = document.getElementById('loc');
+    var front = document.getElementById('front');
+    var got = document.getElementById('got');
+    var got1 = document.getElementById('got1');
     if(qty > 1){
     var d = arr[ind].quantity--;
     arr[ind].quantity.innerHTML = d;
     localStorage.setItem("shoppingCart",JSON.stringify(arr));
     addedtocart(arr);
     }
-    else if(qty == 1){
+    else if(qty <= 1){
         remove(ind)
         t.style.display="none"
+        not.style.display="inherit"
+        dis.style.display = "none"
+        col.style.display="none"
+        loc.style.display="none"
+        front.style.display="none"
+        got.style.display="none"
+        got1.style.display="none"
     }
+    // else if(qty == 0){
+    // }
 }
 function total(gtotal){
 var apply = document.getElementById('apply');
@@ -205,6 +251,8 @@ else{
 }
 
 }
-
+function goto(){
+    window.location.href="../paymentpage.html"
+}
 
 
