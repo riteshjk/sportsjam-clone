@@ -158,7 +158,6 @@ body {
   color: black;
 }
 
-<<<<<<< HEAD
 .category-navbar{
     width:99.89%;
     height:30px;
@@ -166,12 +165,6 @@ body {
     padding-top: 8px;
     margin: auto;
 
-=======
-.category-navbar {
-  width: 100%;
-  height: 40px;
-  border: 1px solid silver;
->>>>>>> 21361d4a6d77877b03fc350d235f658f3ca72809
 }
 .category-navbar ul {
   list-style: none;
