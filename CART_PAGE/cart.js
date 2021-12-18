@@ -223,6 +223,7 @@ if(gtotal > 500){
     if(code=="masai10"){
         var x=(f - (f*10)/100);
         w.innerHTML = "₹"+ (x.toFixed(2));
+        localStorage.setItem("discount",JSON.stringify(x.toFixed(2)));
     
     }
     else{

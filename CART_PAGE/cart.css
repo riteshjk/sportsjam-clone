@@ -37,6 +37,16 @@ padding: 0px;
     background-color: #eeeeee;
 
 }
+.flexItem1{
+    width:90%;
+    margin: auto;
+    display: flex;
+    border-top: 1px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+    background-color: #eeeeee;
+
+}
 #discount{
     display: none;
     width:15%;
@@ -213,6 +223,13 @@ padding: 0px;
     border-left: 1px solid #e1e1e1;
     border-right: 1px solid #e1e1e1;
 }
+.newData1{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    border-left: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+}
 .final{
     
     height:30px;
@@ -238,6 +255,14 @@ padding: 0px;
     /* margin:auto; */
     margin-top: 10px;
     margin-left: 10px;
+}
+.location1{
+    width:90%;
+    height:auto;
+     /* border:1px solid #e1e1e1; */
+    /* margin:auto; */
+    margin-top: 10px;
+    margin-left: 75px;
 }
 .main1{
     display: flex;
@@ -300,6 +325,12 @@ padding: 0px;
     /* margin: auto; */
     margin-left: 10px;
 }
+#front1{
+    display: flex;
+    width: 90%;
+    /* margin: auto; */
+    margin-left: 25px;
+}
 .box2{
     margin-top: 10px;
     margin-left: 15px;
@@ -317,8 +348,19 @@ padding: 0px;
     font-size: 13px;
 
 }
+.get1{
+    margin: 10px 0 0 1.8%;
+    font-size: 13px;
+
+}
 .final2{
     margin-left: 460px;
+    margin-top: 10px;
+
+    
+}
+.final21{
+    margin-left: 479px;
     margin-top: 10px;
 
     
@@ -356,6 +398,12 @@ padding: 0px;
     padding-left: 15px;
     padding-top: 5px;
 }
+.randommarginFlex{
+    display: flex;
+    width:98.85%;
+    column-gap: 10px;
+    padding-left: 10px;
+}
 .new_fotter {
     height:23vw;
     display: grid;
@@ -369,12 +417,6 @@ padding: 0px;
       border:2px solid red;
   }
   
-.randommarginFlex{
-    display: flex;
-    width:98.85%;
-    column-gap: 10px;
-    padding-left: 10px;
-}
 .nav1{
     height:40px;
     width:100%;
@@ -382,6 +424,11 @@ padding: 0px;
   }
   .title{
       color:white;
+  }
+
+  #applied{
+      display: none;
+      color: red;
   }
   
   

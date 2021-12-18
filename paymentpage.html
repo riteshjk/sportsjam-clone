@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="paymentpage.css">
-    <script src="paymentpage.js"></script>
+    <link rel="stylesheet" href="./CART_PAGE/cart.css">
+    
 </head>
 <body>
     <div class="headimg">
-        <a href="">
+        <a href="./cricketProducts.html">
             <img src="https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/logo.jpg" alt="">
         </a>
     </div>
@@ -183,6 +184,61 @@
     </div>
     <div class="step3">
         
+        <div class="flexItem1" id="hidden">
+            <div id="first">
+                <div class="outline" id="one">Product Name</div>
+            </div>
+            <div id="sec"><div class="outline" id="two">Unit Price</div></div>
+            <div id="thr"><div class="outline" id="three">Quantity</div></div>
+            <div id="for"><div class="outline" id="four">Total</div></div>
+            <div id="discount"><div class="outline five">Discount</div></div>
+            <div id="onemore"><div id="six">Remove</div></div>
+          </div>
+          <div id="why"></div>
+          <div class="final">
+          </div>
+          <div class="location1" id="loc">
+            <div class="summary">
+          <p>Order summary</p>
+          </div>
+          <div class="main1">
+            <div id="stotal">Cart Sub Total:</div>
+            <div id="tamount" class="amount"></div>
+         </div>
+          <div class="main1">
+          <div id="stotal">Estimated Delivery Charges:	</div>
+          <div class="amount" id="edcAmount"></div>
+          </div>
+          <div class="main1">
+         <div id="stotal">GST 12%	</div>
+          <div class="amount" id="gstAmount"></div>
+         </div>
+        <div class="main1">
+        <div id="stotal">Total Cart Amount:</div>
+        <div class="amount" id="tcAmount">500</div>
+          </div>
+
+          <div id="front1">
+            <div class="box">
+              <h5>REDEEM</h5>
+              <h5>DISCOUNT</h5>
+              <div class="whiteB">1</div>
+              </div >
+              <div class="box2">
+              <h4>Use your voucher code</h4>
+              <p>Only one coupon code can be used per order at this time.
+              </p>
+          </div>
+          </div>
+          <div class="get1" id="got">
+          <label for="">Voucher code</label>
+          <input type="text" id="coupen">
+          </div>
+          <div class="final21" id="got1">
+          <button id="apply" class="clickn">APPLY</button>
+          </div>
+        <p id="applied">"masai10" coupen already applied</p>
+        </div>
         <div style="margin-left: 100px; margin-top: 10px;">
             <button onclick="myvalue3()" class="continuebutton">Continue</button>
         </div>
@@ -207,6 +263,8 @@
             <option value="dc">Debit card</option>
         </select>
         <div style="margin-left: 100px; margin-top: 10px;">
+
+
             <button onclick="myvalue4()" class="continuebutton">Continue</button>
         </div>
     </div>
@@ -222,3 +280,4 @@
     </div>
 </body>
 </html>
+<script src="paymentpage.js"></script>
