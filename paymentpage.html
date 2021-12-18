@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="paymentpage.css">
+    <script src="paymentpage.js"></script>
+</head>
+<body>
+    <div class="headimg">
+        <a href="">
+            <img src="https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/logo.jpg" alt="">
+        </a>
+    </div>
+
+    <div class="headpart">
+        <p class="steppart">step 1</p>
+        <p class="stepdescription">Fast Track Secure Checkout</p>
+    </div>
+
+    <div class="step1">
+        <div>
+            <p class="myemailaddress">My Email address :</p>
+            <input type="email" class="emailenter">
+            <p class="common">Your order details will be sent to this email address.</>
+        </div>
+        <div class="guestornotbox">
+            <div>
+                <input class="radioinside" type="radio" name="guestornot" checked>
+                <label for="">Continue as guest</label>
+            </div>
+            <p class="common guestornotp">You do not  need a password for this option</p>
+        </div>
+        <div>
+            <div class="guestornotbox">
+                <input class="radioinside" type="radio" name="guestornot" >
+                <label for="">I have an account and password</label>        
+                <p class="common guestornotp">Sign in to your account and checkout faster</p>
+                <div class="enteryourpassword">
+                    <p class="radioinside enteryour">Enter your password :</p>
+                    <input class="enterpassword" type="password">
+                    <br>
+                    <p class="forgot"><a href="">But I forgot my password</a></p>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; margin-bottom: 10px;">
+            <div>
+                <button class="continuebutton">Continue</button>
+            </div>
+            <div class="orspan">
+                <span>OR</span>
+            </div>
+            <div class="loginwithfb">
+                <a href="" >
+                    <img src="https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Stylesheet/images/facebook_icon1.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="headpart">
+        <p class="steppart">step 2</p>
+        <p class="stepdescription">Billing & Shipping Information</p>
+    </div>
+
+    
+
+    <div class="step2">
+        <div class="shipping">
+            <span><b>Shipping address </b>*</span>
+            <span class="common req">Required fields</span>
+        </div>
+        <table class="tableform">
+            <tr>
+                <td>Name *</td>
+                <td>Last Name *</td>
+                <td>Address *</td>
+            </tr>
+            <tr>
+                <td><input class="tablewidth" type="text"></td>
+                <td><input class="tablewidth" type="text"></td>
+                <td><input class="tablewidth" type="text"></td>
+            </tr>
+            <tr>
+                <td>Landmark</td>
+                <td>Post/Zip code *</td>
+                <td>Country *</td>
+            </tr>
+            <tr>
+                <td><input class="tablewidth" type="text"></td>
+                <td><input class="tablewidth" type="number"></td>
+                <td>
+                    <select class="tablewidth selectwidth" name="" id="">
+                        <option value="">--Select Country--</option>
+                        <option value="India">India</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>State *</td>
+                <td>City *</td>
+                <td>Telephone</td>
+            </tr>
+            <tr>
+                <td>
+                    <select class="tablewidth selectwidth" name="" id="">
+                        <option value="">--Select State--</option>
+                        <option value="">Maharashtra</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="tablewidth selectwidth" name="" id="">
+                        <option value="">--Select City--</option>
+                        <option value="">Akola</option>
+                        <option value="">Mumbai</option>
+                        <option value="">Nagpur</option>
+                        <option value="">Pune</option>
+                    </select>
+                </td>
+                <td>
+                    <div style="display: flex;">
+                        <div>
+                            <input class="ccwidtth" type="number">
+                        </div>
+                        <div >
+                            <input class="numwidth" type="number">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Mobile *</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="display: flex;">
+                        <div>
+                            <input class="ccwidtth" type="number">
+                        </div>
+                        <div >
+                            <input class="numwidth" type="number">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="gift">
+            <div >
+                <input class="checkinside" type="checkbox">
+                <label for="">Send this product as gift</label>
+                <p class="giftcaption">Type in your message in less than 400 Charactors and the product will sent as gift with the message of yours.</p>
+                <input class="captionwidth" type="text">
+            </div>
+
+            <div class="delivery">
+                <label for="">Delivery date: </label>
+                <input class="datefor" type="date">
+            </div>
+        </div>
+
+
+        <div style="margin-left: 100px; margin-top: 10px;">
+            <button class="continuebutton">Continue</button>
+        </div>
+        
+    </div>
+
+
+
+    <div class="headpart">
+        <p class="steppart">step 3</p>
+        <p class="stepdescription">Order Summary & Logistics</p>
+    </div>
+    <div class="step3">
+        <div style="margin-left: 100px; margin-top: 10px;">
+            <button class="continuebutton">Continue</button>
+        </div>
+        <div class="line"></div>
+    </div>
+ 
+
+
+
+    <div class="headpart">
+        <p class="steppart">step 4</p>
+        <p class="stepdescription">Payment Options</p>
+    </div>
+    <div class="step4">
+        <label class="paymentoption" for="">Payment Option</label>
+        <select class="payment" name="" id="">
+            <option value="">--Payment option--</option>
+            <option value="">Cash on Delivery</option>
+            <option value="">Credit card</option>
+            <option value="">Debit card</option>
+        </select>
+    </div>
+
+    <div class="copyright">
+        <p>Copyrights © 2017 sportsjam. All Rights Reserved</p>
+    </div>
+    <div class="capillary">
+        <img src="https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Stylesheet/images/capillary_logo.png" alt="">
+    </div>
+</body>
+</html>

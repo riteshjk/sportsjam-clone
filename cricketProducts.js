@@ -365,7 +365,7 @@ function getAllCategories(arr){
             uniq[arr[i].category]++;
         }        
     }
-    console.log(uniq)
+    //console.log(uniq)
     return uniq;
 }
 
@@ -440,7 +440,7 @@ uniqCategoriesArr.map(function(elem){
         }
         elem_count++;
         
-        console.log(filterCategories);
+        //console.log(filterCategories);
         displayFilteredProducts();
         
     })
@@ -527,7 +527,7 @@ function displayFilteredProducts(){
             return elem.category == filterCategories[i];
         })
         total_filtered_prods = total_filtered_prods.concat(filtered)
-        console.log(total_filtered_prods)
+        //console.log(total_filtered_prods)
         
         displayProducts(total_filtered_prods);       
     }
@@ -538,7 +538,7 @@ function displayFilteredProducts(){
 
 //Changing the view of the page from 3 to 4 or vice-versa//
 document.querySelector("#flexofThree").addEventListener("click", function(){
-    console.log("30%");
+    //console.log("30%");
     for(var i =0; i<prodData.length; i++){
         document.querySelectorAll(".productDiv")[i].style.flex = "25%"
         document.querySelector("#flexOfFour").style.backgroundColor = "lightgrey";
@@ -591,16 +591,20 @@ function showQuickView(){
     document.querySelector(".quantityPriceDisc").append(strikedprc, prc, discount);
 
     document.querySelector("#addToCart").addEventListener("click",function(){
+        
         var qty = document.querySelector("#qty").value
         if(qty==null||qty==""){
             qty =1;
         }
+        // var data = [];
         var cartobj = {
+            
             image: product.imgUrl,
             product_name: product.name,
             product_price: product.price,
             quantity: qty,
         }
+        console.log(cart)
         cart.push(cartobj);
         localStorage.setItem("shoppingCart",JSON.stringify(cart));
         document.querySelector(".quickview").style.display = "none";
@@ -609,7 +613,7 @@ function showQuickView(){
     
 }
 document.querySelector("#closequickview").addEventListener("click", function(){
-    console.log("close")
+    // //console.log("close")
     document.querySelector(".quickview").style.display = "none";
 })
 

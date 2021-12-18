@@ -7,6 +7,18 @@
 .container > div {
   text-align: center;
 }
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .gift {
   font-size: 60px;
 }
@@ -37,6 +49,21 @@ li {
   text-align: left;
   font-size: 12px;
   background-color: #262626;
+}
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  .new_fotter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+  .new_fotter {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .title {
+    margin-top: 20px;
+  }
 }
 .title {
   color: #dedede;
@@ -82,7 +109,7 @@ li {
 .copy-right {
   text-align: left;
   font-family: open sans;
-  top: 10px;
+  margin-top: 9vw;
   font-size: 12px;
   color: #dedede;
 }
@@ -167,6 +194,7 @@ div.left-text a.btn {
   text-align: center;
   color: #757575;
   font-family: raleway, sans-serif;
+  font-size: 20px;
 }
 .middle {
   display: grid;
