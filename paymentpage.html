@@ -23,19 +23,19 @@
     <div class="step1">
         <div>
             <p class="myemailaddress">My Email address :</p>
-            <input type="email" class="emailenter">
-            <p class="common">Your order details will be sent to this email address.</>
+            <input class="emailenter" type="email">
+            <p class="common">Your order details will be sent to this email address.</p>
         </div>
         <div class="guestornotbox">
             <div>
-                <input class="radioinside" type="radio" name="guestornot" checked>
+                <input class="radioinside tickguest" type="radio" name="guestornot" checked>
                 <label for="">Continue as guest</label>
             </div>
             <p class="common guestornotp">You do not  need a password for this option</p>
         </div>
         <div>
             <div class="guestornotbox">
-                <input class="radioinside" type="radio" name="guestornot" >
+                <input class="radioinside tickemail" type="radio" name="guestornot" >
                 <label for="">I have an account and password</label>        
                 <p class="common guestornotp">Sign in to your account and checkout faster</p>
                 <div class="enteryourpassword">
@@ -48,7 +48,7 @@
         </div>
         <div style="display: flex; margin-bottom: 10px;">
             <div>
-                <button class="continuebutton">Continue</button>
+                <button onclick="myvalue()" class="continuebutton">Continue</button>
             </div>
             <div class="orspan">
                 <span>OR</span>
@@ -75,6 +75,8 @@
             <span><b>Shipping address </b>*</span>
             <span class="common req">Required fields</span>
         </div>
+
+        
         <table class="tableform">
             <tr>
                 <td>Name *</td>
@@ -82,9 +84,9 @@
                 <td>Address *</td>
             </tr>
             <tr>
-                <td><input class="tablewidth" type="text"></td>
-                <td><input class="tablewidth" type="text"></td>
-                <td><input class="tablewidth" type="text"></td>
+                <td><input class="tablewidth namevalue" type="text"></td>
+                <td><input class="tablewidth lastvalue" type="text"></td>
+                <td><input class="tablewidth arrdessvalue" type="text"></td>
             </tr>
             <tr>
                 <td>Landmark</td>
@@ -92,10 +94,10 @@
                 <td>Country *</td>
             </tr>
             <tr>
-                <td><input class="tablewidth" type="text"></td>
-                <td><input class="tablewidth" type="number"></td>
+                <td><input class="tablewidth landmarkvalue" type="text"></td>
+                <td><input class="tablewidth zipcodevalue" type="number"></td>
                 <td>
-                    <select class="tablewidth selectwidth" name="" id="">
+                    <select class="tablewidth selectwidth selectcountry" name="" id="">
                         <option value="">--Select Country--</option>
                         <option value="India">India</option>
                     </select>
@@ -108,27 +110,27 @@
             </tr>
             <tr>
                 <td>
-                    <select class="tablewidth selectwidth" name="" id="">
+                    <select class="tablewidth selectwidth selectstate" name="" id="">
                         <option value="">--Select State--</option>
-                        <option value="">Maharashtra</option>
+                        <option value="Maharashtra">Maharashtra</option>
                     </select>
                 </td>
                 <td>
-                    <select class="tablewidth selectwidth" name="" id="">
+                    <select class="tablewidth selectwidth selectcity" name="" id="">
                         <option value="">--Select City--</option>
-                        <option value="">Akola</option>
-                        <option value="">Mumbai</option>
-                        <option value="">Nagpur</option>
-                        <option value="">Pune</option>
+                        <option value="Akola">Akola</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Nagpur">Nagpur</option>
+                        <option value="Pune">Pune</option>
                     </select>
                 </td>
                 <td>
                     <div style="display: flex;">
                         <div>
-                            <input class="ccwidtth" type="number">
+                            <input class="ccwidtth numwidth1cc" type="number">
                         </div>
                         <div >
-                            <input class="numwidth" type="number">
+                            <input class="numwidth numwidth1" type="number">
                         </div>
                     </div>
                 </td>
@@ -143,7 +145,7 @@
                             <input class="ccwidtth" type="number">
                         </div>
                         <div >
-                            <input class="numwidth" type="number">
+                            <input class="numwidth numwidth2" type="number">
                         </div>
                     </div>
                 </td>
@@ -166,10 +168,12 @@
 
 
         <div style="margin-left: 100px; margin-top: 10px;">
-            <button class="continuebutton">Continue</button>
+            <button onclick="myvalue2()" class="continuebutton">Continue</button>
         </div>
-        
+
     </div>
+            
+    
 
 
 
@@ -178,8 +182,9 @@
         <p class="stepdescription">Order Summary & Logistics</p>
     </div>
     <div class="step3">
+        
         <div style="margin-left: 100px; margin-top: 10px;">
-            <button class="continuebutton">Continue</button>
+            <button onclick="myvalue3()" class="continuebutton">Continue</button>
         </div>
         <div class="line"></div>
     </div>
@@ -191,21 +196,29 @@
         <p class="steppart">step 4</p>
         <p class="stepdescription">Payment Options</p>
     </div>
+
+    
     <div class="step4">
         <label class="paymentoption" for="">Payment Option</label>
-        <select class="payment" name="" id="">
+        <select class="payment avaopt" name="" id="">
             <option value="">--Payment option--</option>
-            <option value="">Cash on Delivery</option>
-            <option value="">Credit card</option>
-            <option value="">Debit card</option>
+            <option value="cod">Cash on Delivery</option>
+            <option value="cc">Credit card</option>
+            <option value="dc">Debit card</option>
         </select>
+        <div style="margin-left: 100px; margin-top: 10px;">
+            <button onclick="myvalue4()" class="continuebutton">Continue</button>
+        </div>
     </div>
 
-    <div class="copyright">
-        <p>Copyrights © 2017 sportsjam. All Rights Reserved</p>
-    </div>
-    <div class="capillary">
-        <img src="https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Stylesheet/images/capillary_logo.png" alt="">
+    
+    <div class="footer">
+        <div class="copyright">
+            <p>Copyrights © 2017 sportsjam. All Rights Reserved</p>
+        </div>
+        <div class="capillary">
+            <img src="https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Stylesheet/images/capillary_logo.png" alt="">
+        </div>
     </div>
 </body>
 </html>

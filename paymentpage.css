@@ -6,10 +6,7 @@
 a{
     color: black;
 }
-/* .step1{
-    display: none;
-} */
-/* .step2{
+.step2{
     display: none;
 }
 .step3{
@@ -17,7 +14,27 @@ a{
 }
 .step4{
     display: none;
-} */
+}
+#step1hidden{
+    display: none;
+}
+#step2content{
+    display: contents;
+}
+#step2hidden{
+    display: none;
+}
+#step3content{
+    display: contents;
+}
+#step3hidden{
+    display: none;
+}
+#step4content{
+    display: contents;
+}
+
+
 .headimg{
     /* border: 2px solid red; */
     margin-top: 10px;
@@ -212,6 +229,7 @@ a{
     margin-top: 10px;
     margin-left: 100px;
     width: 1150px;
+    margin-bottom: 10px;
 }
 
 .copyright{
