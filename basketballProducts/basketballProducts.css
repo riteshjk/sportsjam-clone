@@ -149,10 +149,9 @@ body{
 }
 
 .category-navbar{
-    width:99.69%;
+    width:100%;
     height:40px;
     border:1px solid silver;
-    padding-top: 3px;
 
 }
 .category-navbar ul{
@@ -174,7 +173,6 @@ body{
     height:100%;
     font-size: 14px;
     font-weight: 600;
-    margin-top: 3px;
     float:left;
     text-align: center;
     cursor: pointer;
@@ -385,11 +383,6 @@ body{
 
 /* MAIN PAGE CSS */
 .mainPage {
-<<<<<<< HEAD
-    width: 98.70%;
-=======
-    width: 100%;
->>>>>>> 3929d523a93e7381322d9c2500510c21af99c15f
     display: grid;
     grid-template-columns: 15% 80%;
     padding: 10px;
@@ -662,6 +655,7 @@ body{
     text-align: left;
     font-size: 12px;
     background-color: #262626;
+    height: 300px;
   }
   .title {
     color: #dedede;

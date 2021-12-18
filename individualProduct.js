@@ -24,7 +24,7 @@ var discount = document.createElement("p");
     discount.style.color = "orange";
 
 var description = document.createElement("p");
-description.textContent = product.description;
+description.innerHTML = product.description;
 
 document.querySelector(".img").append(img);
 document.querySelector("#desc").append(prodName, description);

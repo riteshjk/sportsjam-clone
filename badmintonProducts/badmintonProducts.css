@@ -385,11 +385,7 @@ body{
 
 /* MAIN PAGE CSS */
 .mainPage {
-<<<<<<< HEAD
-    width: 98.70%;
-=======
     width: 100%;
->>>>>>> 3929d523a93e7381322d9c2500510c21af99c15f
     display: grid;
     grid-template-columns: 15% 80%;
     padding: 10px;
@@ -662,6 +658,7 @@ body{
     text-align: left;
     font-size: 12px;
     background-color: #262626;
+    height: 300px;
   }
   .title {
     color: #dedede;
