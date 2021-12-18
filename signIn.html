@@ -10,23 +10,24 @@
 	
 		<div class="callout" data-closable>
 			<button class="close-button" aria-label="Close alert" type="button" data-close>
-			  <span aria-hidden="true">&times;</span>
+			  <span onclick="location.href='home page.html'" aria-hidden="true">&times;</span>
 			</button>
 			<h1 class="label">User Login</h1>
 		  
 	</div>	
-		<form class="login_form" action="home page.html" method="post" name="form" onsubmit="return validated()">
-			<div class="font">Email or Phone</div>
-			<input autocomplete="off" type="text" name="email">
-			<div id="email_error">Please fill up your Email or Phone</div>
-			<div class="font font2">Password</div>
-			<input type="password" name="password">
-			<div id="pass_error">Please fill up your Password</div>
+		<form class="login_form" method="post" name="form" onsubmit="return validated()">
+			<div class="font">Email:</div>
+			<input  id="email" autocomplete="off" type="text" name="email">
+			<div id="email_error">Incorrect Email</div>
+			<div class="font font2">Password:</div>
+			<input id="pass" type="password" name="password">
+			<div id="pass_error">Incorrect Password</div>
 			<div id ="last1">
 			<p><a href="signUp.html">New User? Register</a></p>
-			<p><a href="forgetpassword.html">Forget Password</a></p>
+			<p><a href="forgetpass.html">Forget Password</a></p>
 			</div>
-			<button value ="submit">Login</button>
+			<button id ="btn3">Login</button>
+			
 		</form>
 		<div id = "last2">
 			<button id ="btn1" onclick="location.href='https:www.facebook.com'">Facebook</button>
