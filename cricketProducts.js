@@ -241,6 +241,18 @@ var crickproddata = [
     }
 ]
 
+
+var user = JSON.parse(localStorage.getItem("userDatabase"))
+    var signin = document.getElementById("signin")
+    var logout = document.getElementById("logout")
+    if(user != null){
+        logout.style.display="flex";
+        signin.style.display="none"
+    }
+
+    logout.onclick= localStorage.removeItem("userDatabase")
+
+
 localStorage.setItem("cricketDatabase",JSON.stringify(crickproddata));
 
 var prodData = JSON.parse(localStorage.getItem("cricketDatabase"));

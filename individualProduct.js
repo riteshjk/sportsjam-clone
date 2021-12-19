@@ -1,3 +1,14 @@
+var user = JSON.parse(localStorage.getItem("userDatabase"))
+    var signin = document.getElementById("signin")
+    var logout = document.getElementById("logout")
+    if(user != null){
+        logout.style.display="flex";
+        signin.style.display="none"
+    }
+
+    logout.onclick= localStorage.removeItem("userDatabase")
+
+
 console.log("NEw pages")
 var count = 1;
 

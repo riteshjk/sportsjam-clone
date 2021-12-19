@@ -28,6 +28,11 @@ body {
   width: 90px;
   display: flex;
 }
+.navdiv23 {
+  height: 40px;
+  width: 90px;
+  display: none;
+}
 .navdiv3 {
   height: 40px;
   width: 140px;

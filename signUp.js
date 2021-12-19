@@ -22,8 +22,8 @@ function checkInputs() {
 	
 	var usernameValue = username.value;
 	var emailValue = email.value;
-    var mobilenoValue =mobileno.value;
-	var passwordValue = password1.value;
+    var mobilenoValue =mobile.value;
+	var passwordValue = password.value;
 	var password2Value = password2.value;
     
 	
