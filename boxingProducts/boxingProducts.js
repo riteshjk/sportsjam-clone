@@ -247,12 +247,14 @@ localStorage.setItem("boxingDatabase",JSON.stringify(boxingproddata));
 var user = JSON.parse(localStorage.getItem("userDatabase"))
     var signin = document.getElementById("signin")
     var logout = document.getElementById("logout")
+    var acnt = document.getElementById("acnt")
     if(user != null){
         logout.style.display="flex";
         signin.style.display="none"
+        acnt.style.display="none"
     }
 
-    logout.onclick= localStorage.removeItem("userDatabase")
+    logout.onclick=function(){localStorage.removeItem("userDatabase")}
 
 var prodData = JSON.parse(localStorage.getItem("boxingDatabase"));
 var cart = JSON.parse(localStorage.getItem("shoppingCart"))||[];
