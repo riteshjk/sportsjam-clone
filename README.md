@@ -18,7 +18,7 @@ This is a clone of an ecommerce website sportsjam.in.
   - Font-Awesome
 
 ## Getting Started
-  Clone repository and start from index.html
+  Clone repository and start from "home page.html"
   
 ## Features
   - Basic Sign-in/Sign-Up
