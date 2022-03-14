@@ -1,9 +1,22 @@
 # sportsjam-clone
-Cloning the sportsjam.in e-commerce website
-This website has been built using simple HTML CSS and Javascript. 
-There have been use of external sources like font-awesome for icons. 
-Local storage is what is the primary storage that is being used to run the website. Other than that for products the data has been mapped with the use of array of objects.
 
-DEMO VIDEO LINK: https://drive.google.com/file/d/1RkFYE83zCaPZ_TIYMtTbJY4-laAcYoM3/view?usp=sharing
+## Description
+This is a clone of an ecommerce website sportsjam.in.
 
-BLOG LINK: https://medium.com/@sreerag.rajan5/cloning-sportsjam-in-cd1c80c1b06b
+[Website Link](https://practical-meninsky-36f305.netlify.app/)
+
+[Demo Video](https://drive.google.com/file/d/1RkFYE83zCaPZ_TIYMtTbJY4-laAcYoM3/view?usp=sharing)
+
+[Blog](https://medium.com/@sreerag.rajan5/cloning-sportsjam-in-cd1c80c1b06b)
+
+## TechStack
+  - HTML
+  - CSS
+  - Javascript
+  - Font-Awesome
+
+## Getting Started
+  Clone repository and start from index.html
+
+ 
+
