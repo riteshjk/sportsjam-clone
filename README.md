@@ -19,6 +19,12 @@ This is a clone of an ecommerce website sportsjam.in.
 
 ## Getting Started
   Clone repository and start from index.html
+  
+## Features
+  - Basic Sign-in/Sign-Up
+  - Product Catalog page with filter and Sort functionality
+  - Add to cart
+  - Checkout simulated
 
  
 
