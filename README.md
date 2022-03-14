@@ -1,7 +1,9 @@
-# sportsjam-clone
+# Sportsjam-Clone
 
 ## Description
 This is a clone of an ecommerce website sportsjam.in.
+
+![Landing Page](https://miro.medium.com/max/875/1*R__cdn8L1gYGK1Tdqqyubg.png)
 
 [Website Link](https://practical-meninsky-36f305.netlify.app/)
 
