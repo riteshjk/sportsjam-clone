@@ -1,7 +1,7 @@
 # Sportsjam-Clone
 
 ## Description
-This is a clone of an ecommerce website sportsjam.in.
+An e-commerce web application dealing with the sale of sports items in India. we add all the functionality by using HTML, CSS and JS
 
 ![Landing Page](https://miro.medium.com/max/875/1*R__cdn8L1gYGK1Tdqqyubg.png)
 
