@@ -5,14 +5,14 @@ An e-commerce web application dealing with the sale of sports items in India. we
 ### Landing Page
 ![Landing Page](https://miro.medium.com/max/875/1*R__cdn8L1gYGK1Tdqqyubg.png)
 ### Product Page
-(![Screenshot (50)](https://user-images.githubusercontent.com/96072567/159854396-1a742ce7-dbc7-47eb-b4d3-1df430386099.png)
-)
+![Screenshot (50)](https://user-images.githubusercontent.com/96072567/159854396-1a742ce7-dbc7-47eb-b4d3-1df430386099.png)
+
 ### Product Details Page
-(![Screenshot (51)](https://user-images.githubusercontent.com/96072567/159854459-47bd8ebf-d47a-41cb-a1a3-cbf95afcb98a.png)
-)
+![Screenshot (51)](https://user-images.githubusercontent.com/96072567/159854459-47bd8ebf-d47a-41cb-a1a3-cbf95afcb98a.png)
+
 ### Cart Page
-(![Screenshot (52)](https://user-images.githubusercontent.com/96072567/159854579-ae887d3f-1f6b-41c2-a8d2-0ead05c5f16a.png)
-)
+![Screenshot (52)](https://user-images.githubusercontent.com/96072567/159854579-ae887d3f-1f6b-41c2-a8d2-0ead05c5f16a.png)
+
 
 
 
